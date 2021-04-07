@@ -1,0 +1,244 @@
+.card{
+    position: relative;
+    width: 100%;
+    background: #252525;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.card .card-title{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6E7DFF;
+    margin-bottom: 1.3em;
+    font-family: 'Lemon milk Regular';
+}
+
+.card p:nth-child(2){
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.card .card-image{
+    position: absolute;
+    top: -50%;
+    right: 6%;
+    transform: translateY(50%);
+}
+
+.careerCard{
+    background: #252525;
+    padding: 20px;
+}
+
+.careerCard img{
+    width: 48px;
+    height: 48px;
+}
+
+.careerCard .card-title{
+    margin-top: 1em;
+}
+
+.PersonCard{
+    display: grid;
+    grid-gap: 1em;
+}
+
+.PersonCard .block-top{
+    width: 100%;
+    height: 100%;
+}
+
+.PersonCard .block-top img{
+    width: 100%;
+}
+
+.PersonCard .block-bottom img{
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.process-card{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 25%;
+    place-content: space-between;
+}
+
+.process-card .block-left{
+    position: relative;
+    width: 75%;
+    background: #252525;
+    padding: 40px 20px 30px;
+}
+
+.process-card .block-left .text{
+    width: 70%;
+}
+
+.process-card .block-left .number{
+    position: absolute;
+    top: -30px;
+    left: 5%;
+    font-size: 3rem;
+}
+
+.process-card .block-left > .process-img{
+    position: absolute;
+    top:50%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.process-card-two{
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 50%;
+    place-content: space-between;
+}
+
+.process-card-two .block-right{
+    position: relative;
+    width: 75%;
+    background: #252525;
+    padding: 40px 20px 30px;
+}
+
+.process-card-two .block-right > .text{
+    width: 70%;
+    color: #f7f7f7;
+    line-height: 25px;
+}
+
+.process-card-two .block-right .number{
+    position: absolute;
+    top: -30px;
+    left: 5%;
+    font-size: 3rem;
+}
+
+.process-card-two .block-right .process-img{
+    position: absolute;
+    top:50%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.process-card .right-arrow{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+.process-card-two .left-arrow{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.process-card .mob-right-arrow,.process-card-two .mob-left-arrow{
+    display: none;
+}
+
+.work-card{
+    background: #252525;
+    padding: 30px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.work-card .card-link{
+    font-size: 16px;
+    padding: 10px;
+    margin: 1em 0;
+    width: fit-content;
+}
+
+.work-card .title{
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.work-card .workcard-image{
+    position: relative;
+    width: 70%;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.work-card .workcard-image img{
+   margin-right: 0;
+   width: 100%;
+}
+
+@media screen and (max-width:768px){
+    .card .card-image{
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .work-card .workcard-image{
+        width: 50%;
+    }
+    .process-card .block-right,
+    .process-card-two .block-left{
+        display: none;
+    }
+    .process-card,.process-card-two{
+        grid-template-columns: 100%;
+    }
+    .process-card .right-arrow,
+    .process-card-two .left-arrow{
+        display: none;
+    }
+    .process-card .mob-right-arrow{
+        position: absolute;
+        right: 0;
+        top: 60%;
+        display: block;
+    }
+    .process-card-two .mob-left-arrow{
+        transform: scale(-1,1);
+        position: absolute;
+        left: -5%;
+        top: 60%;
+        display: block;
+    }
+}
+
+@media screen and (max-width:576px){
+    .card .card-image{
+        top: -25%;
+        right: 5%;
+        transform: translateX(0%);
+    }
+    .process-card .block-left,
+    .process-card-two .block-right{
+        width: 100%;
+    }
+    .process-card .block-left > .process-img{
+        left: 80%;
+    }
+    .process-card .block-left > .process-img,
+    .process-card-two .block-right .process-img{
+        left: 80%;
+        width: 50%;
+    }
+    .process-card .block-left > .text,
+    .process-card-two .block-right .text{
+        width: 50%;
+    }
+    .process-card .mob-right-arrow{
+        right: -5%;
+    }
+    .process-card .mob-right-arrow,
+    .process-card-two .mob-left-arrow{
+        top: 60%;
+    }
+}

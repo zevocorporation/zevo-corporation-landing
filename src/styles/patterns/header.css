@@ -1,0 +1,47 @@
+.header{
+    padding: 20px 0;
+    width: 100%;
+    height: 70px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: 230px;
+}
+
+.header .menu{
+    display: none;
+    cursor: pointer;
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 2em;
+}
+
+.header nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width:992px){
+    .header nav{
+        grid-column-gap: 1.5em;
+    }
+}
+
+@media screen and (max-width:768px){
+    .header nav{
+       display: none;
+    }
+    .header .menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width:576px){
+
+}

@@ -1,0 +1,24 @@
+.contactus{
+    overflow: hidden;
+}
+
+.contactus .contact-header{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+@media screen and (max-width:768px){
+    .contactus .contact-header{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+}
+
+@media screen and (max-width:576px){
+    .contactus .contact-header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+}

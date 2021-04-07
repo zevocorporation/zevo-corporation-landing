@@ -1,0 +1,34 @@
+.service-card{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+.card-title{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6E7DFF;
+    margin-bottom: 1.3em;
+}
+
+.service-card .image{
+    width: 100%;
+    height: 250px;
+}
+
+.service-card .image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:768px){
+    .service-card .image{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:576px){
+    
+}

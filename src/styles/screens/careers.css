@@ -1,0 +1,182 @@
+.career{
+    width: 100%;
+    overflow: hidden;
+}
+
+ .career-landing{
+    width: 100%;
+    height: 100vh;
+    padding: 0 70px;
+    background: rgba(0,0,0,0.4);
+    background-blend-mode: darken;
+}
+
+.career .career-landing .bg-img{
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.career .life{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    background: #141414;
+    padding: 100px 70px 50px;
+}
+
+.career .life .block-left{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+}
+
+.career .life .block-left > p:nth-child(2),
+.career .life .block-left > p:nth-child(3){
+    line-height: 25px;
+    color: #f7f7f7;
+}
+.career .life .block-right{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.career .life .block-right .image-block-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.career .life .block-right .image-block-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.career .life .block-right .image-block-one div img,
+.career .life .block-right .image-block-two div img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.career .values{
+    padding: 50px 70px;
+    background: #141414;
+}
+
+.career .values > p:nth-child(1),
+.career .values > p:nth-child(2){
+    text-align: center;
+}
+
+.career .values > p:nth-child(2){
+    width: 80%;
+    margin: 1em auto 2em;
+    color: #f7f7f7;
+}
+
+.career .values .wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.career .job{
+    padding: 50px 70px;
+    background: #000;
+}
+
+.career .job > p:nth-child(2){
+    margin: 1em 0 2em;
+}
+
+.career .job table{
+    width: 100%;
+    background: #252525;
+    padding: 30px;
+}
+
+.career .job table th{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6E7DFF;
+    margin-bottom: 1.3em;
+    font-family: 'Lemon milk Regular';
+    text-align: left;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.career .job table td{
+    padding-bottom: 20px;
+}
+
+.career .job table td:nth-child(2),td:nth-child(3),td:nth-child(4){
+    color: #f7f7f7;
+}
+
+.career .job table td:nth-child(5){
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6E7DFF;
+}
+
+@media screen and (max-width:768px){
+    .career .career-landing{
+        padding: 0 50px;
+    }
+    .career .life {
+        padding: 100px 50px 50px;
+        grid-template-columns: 1fr;
+    }
+    .career .values{
+        padding: 50px 50px;
+    }
+    .career .values .wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .career .job{
+        padding: 50px;
+    }
+    .career .job table th{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width:576px){
+    .career .career-landing{
+        padding: 0 30px;
+    }
+    .career .life{
+        padding: 100px 30px 50px;
+        grid-template-columns: 1fr;
+    }
+    .career .values{
+        padding: 50px 30px;
+    }
+    .career .values .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .career .job{
+        padding: 50px 30px;
+    }
+    .career .job table th{
+        font-size: 12px;
+    }
+    .career .job table td:nth-child(3),.career .job table td:nth-child(4)
+    ,.career .job table th:nth-child(3),.career .job table th:nth-child(4){
+        display: none;
+    }
+    .career .job table td:nth-child(5){
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
+}
