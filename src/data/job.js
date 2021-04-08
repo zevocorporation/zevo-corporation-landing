@@ -1,8 +1,8 @@
 export const jobs = [
   {
-    title: "UI UX Designer",
-    dep: "UI & UX ",
-    exp: "0 - 5 Years",
+    title: "Intern, React dev",
+    dep: "Information Technology",
+    exp: "Fresher",
     location: "Remote | Chennai, INDIA",
   },
   // {
