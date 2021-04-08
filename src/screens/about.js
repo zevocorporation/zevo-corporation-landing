@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
-
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import Header from "../patterns/header";
 import Footer from "../patterns/footer";
@@ -31,12 +29,14 @@ import person10 from "../assets/cards/Jaisurya.jpg";
 import person11 from "../assets/cards/ceo.jpg";
 import process1 from "../assets/cards/process1.svg";
 import story from "../assets/images/story.svg";
+import processtwo from "../assets/images/two.png";
+import processthree from "../assets/images/three.png";
+import processfour from "../assets/images/four.png";
+import processfive from "../assets/images/five.png";
+import processsix from "../assets/images/six.png";
+import processseven from "../assets/images/seven.png";
 
 const About = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-
   return (
     <>
       <div className="about">
@@ -50,8 +50,8 @@ const About = () => {
         </div>
 
         <div className="story">
-          <div data-aos="zoom-out">
-            <p className="block-title">and this is our story.</p>
+          <div>
+            <p className="block-title">and this is our story...</p>
             <p>
               Crew Zevo's story commenced, from it's inception in 2017, when two
               colleagues from Madras Christian College, Chennai and a colleague
@@ -77,9 +77,11 @@ const About = () => {
               eight within a clocking revenue of 12 Lakh in 3 months, since the
               crew's reappearance in January, 2021.
             </p>
-            <button>Have a project idea? Get in touch</button>
+            <Link to="/contactus">
+              <button>Have a project idea? Get in touch</button>
+            </Link>
           </div>
-          <div className="video" data-aos="zoom-in">
+          <div className="video">
             <img src={story} alt="story" />
           </div>
         </div>
@@ -103,14 +105,14 @@ const About = () => {
             <ProcessCardRight
               num="02"
               title="DOCUMENTATION"
-              img={process1}
-              extra="Documentation commences since the architechting phase and continues throughout the design, development cycles and delivery which become the pre-requisites for case studies and post analysis of the cycle"
+              img={processtwo}
+              extra="Documentation commences sincethe architechting phase and continues throughout the design, development cycles and delivery which become the pre-requisites for case studies and post analysis of the cycle"
               detail="Documentations, becomes the asset of understanding about the product and it's value propositions, for a sustainable penetration"
             />
             <ProcessCard
               num="03"
               title="UI & UX Design"
-              img={process1}
+              img={processthree}
               extra="Visual designs play vital role, psychologically to understand the product, market and connect to the people with right buying power, access their comforts and establish a seamless userflow"
               detail="We take you through a visual journey with our wireframes, High Fidelity prototypes to understand the product in a visual approach and solidify the idea and mission"
             />
@@ -119,19 +121,19 @@ const About = () => {
               title="handoff & development"
               detail="Dependencies, miscommunications and opaque workflows are the barrier for an effective design and development cycle."
               extra="We deliver artifacts on each milestone accomplishment, seamlessly for the development teams, marketing teams and product teams to carry their workflows without dependencies"
-              img={process1}
+              img={processfour}
             />
             <ProcessCard
               num="05"
               title="ACCEPTANCE & TESTING"
-              img={process1}
+              img={processfive}
               extra="Our probabilistic quality assessments, tests to understand the market, product and audience is what makes us stand out of crowd in the market, and entitles us to be the success probabiliy finders for your product"
               detail="Revisions are natural, and we consistently revise and test the products to achieve the best version of it until the acceptance is arrived, and the package is delivered"
             />
             <ProcessCardRight
               num="06"
               title="Delivery"
-              img={process1}
+              img={processsix}
               extra="Punctuality is our promise and we deliver the demands ontime, as interim product versions on the go and complete package with workfiles, source codes and license as agreed, while the closure"
               detail="Smooth workflows, zero miscommunications, ontime updates, and deliveries are the key indicators for our success in the market"
             />
@@ -140,7 +142,7 @@ const About = () => {
               title="Support and Maintenance"
               detail="We power you and your products forever and that's the promise we make at a cost of our understandings and alignment in the journey"
               extra="Businesses letting their clients, midway, post the payment lack vision and barely they become sustainable in time"
-              img={process1}
+              img={processseven}
             />
           </div>
         </div>

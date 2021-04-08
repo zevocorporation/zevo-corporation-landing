@@ -1,8 +1,5 @@
-import React, { useEffect } from "react";
-
-//Importing animation
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import Header from "../patterns/header";
 import { HeroCenter } from "../patterns/hero";
@@ -17,16 +14,17 @@ import ourworkImg from "../assets/images/ourwork.png";
 import idea from "../assets/images/idea.svg";
 import imac from "../assets/cards/imac.jpg";
 import macbook from "../assets/cards/macbook.svg";
-import iphone from "../assets/cards/iphone.svg";
 import auli from "../assets/cards/auli.svg";
 import imac2 from "../assets/cards/imac2.svg";
-import kodoai from "../assets/cards/kodoai.svg";
+import bluedot from "../assets/images/bluedot.svg";
+import greendot from "../assets/images/greendot.svg";
+import yellowdot from "../assets/images/yellowdot.svg";
+import metrono from "../assets/pdf/metrono.pdf";
+import thenftway from "../assets/pdf/thenftway.pdf";
+import preet from "../assets/pdf/preet.pdf";
+import ngauge from "../assets/pdf/ngauge.pdf";
 
 const OurWork = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-
   return (
     <>
       <div className="ourwork">
@@ -39,6 +37,7 @@ const OurWork = () => {
         <div className="image-container">
           <div className="block-one" data-aos="zoom-in">
             <WorkCard
+              details="As a leading interior designer, the folks at Preet Interior Design aimed provide exceptional customer service. They offer clients a unique and innovative approach to tackling all their design needs. Our goal was to provide their customers with an application that was easy to use as well as elegant to look on to."
               title="Preet interior design"
               work="UI UX Design & Development"
               src={macbook}
@@ -47,13 +46,14 @@ const OurWork = () => {
             <WorkCard
               title="BENA credit app"
               work="UI UX Design"
-              src={iphone}
+              src={imac}
               bgcolor="#3079AF"
             />
           </div>
           <div className="block-two" data-aos="zoom-out">
             <WorkCard
               title="N gauge app"
+              details="nGauge labour app helps you interact with all your employees from a single unified platform and provide an enriched experience"
               work="UI UX Design & Development"
               src={imac}
               bgcolor="#1AC1A3"
@@ -70,11 +70,12 @@ const OurWork = () => {
             <WorkCard
               title="KODO AI Website"
               work="UI UX Design & Development"
-              src={kodoai}
+              src={imac}
               bgcolor="#3079AF"
             />
             <WorkCard
               title="Metrono apps"
+              details="Metrono is a mealbox subscription model for bachelors where students, working officials and people who stay away from won't have to go to restarunts to have meals, instead they can subscribe to a mealbox to get breakfast,lunch and dinner delivered straight to your door step"
               work="UI UX Design"
               src={imac2}
               bgcolor="#EFCD3D"

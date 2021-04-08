@@ -1,16 +1,9 @@
-import React, { useEffect } from "react";
-
-//Importing animation
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 //importing styles
 import "../styles/patterns/serviceCard.css";
 
 const ServiceCard = ({ name, src, type, details }) => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   return (
     <div
@@ -18,7 +11,6 @@ const ServiceCard = ({ name, src, type, details }) => {
       style={{
         flexDirection: type === "inverse" ? "column-reverse" : "column",
       }}
-      data-aos="fade-up-right"
     >
       <div>
         <p className="card-title">{name}</p>

@@ -1,8 +1,4 @@
-import React, { useEffect } from "react";
-
-//Importing animation
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 //importing styles
 import "../styles/patterns/card.css";
@@ -14,15 +10,9 @@ import leftarrow from "../assets/icons/left-arrow.svg";
 import rightarrow from "../assets/icons/right-arrow.svg";
 import mobrightarrow from "../assets/icons/mobrightarrow.svg";
 
-import { Link } from "react-router-dom";
-
 export const Card = ({ name, src, description }) => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-
   return (
-    <div className="card" data-aos="fade-up">
+    <div className="card">
       <p className="card-title">{name}</p>
       <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{description}</p>
       <img src={src} alt="card" className="card-image" />
@@ -32,7 +22,7 @@ export const Card = ({ name, src, description }) => {
 
 export const CareerCard = ({ title, src, detail }) => {
   return (
-    <div className="careerCard" data-aos="fade-up">
+    <div className="careerCard">
       <img src={src} alt="card" />
       <p className="card-title">{title}</p>
       <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{detail}</p>
@@ -72,7 +62,7 @@ export const StaffCard = ({ title, src, work }) => {
 
 export const ProcessCard = ({ title, num, img, detail, extra }) => {
   return (
-    <div className="process-card" data-aos="fade-up">
+    <div className="process-card">
       <div className="block-left">
         <span className="number">{num}</span>
         <p className="card-title">{title}</p>
@@ -92,7 +82,7 @@ export const ProcessCard = ({ title, num, img, detail, extra }) => {
 
 export const ProcessCardRight = ({ title, num, img, detail, extra }) => {
   return (
-    <div className="process-card-two" data-aos="fade-up">
+    <div className="process-card-two">
       <div className="block-left">
         <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{detail}</p>
       </div>
@@ -108,24 +98,37 @@ export const ProcessCardRight = ({ title, num, img, detail, extra }) => {
   );
 };
 
-export const WorkCard = ({ title, work, src, bgcolor, fcolor }) => {
+export const WorkCard = ({
+  title,
+  work,
+  src,
+  bgcolor,
+  fcolor,
+  dot,
+  pdf,
+  details,
+}) => {
   return (
     <div className="work-card">
-      <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        ipsum et commodo aliquet imperdiet amet. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit.
-      </p>
+      <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{details}</p>
       <p
         className="card-link"
         style={{ background: `${bgcolor}`, color: `${fcolor}` }}
       >
-        <Link to="/" style={{ color: `${fcolor}` }}>
+        <a
+          href={pdf}
+          style={{ color: `${fcolor}` }}
+          download
+          target="_blank"
+          rel="noreferrer"
+        >
           Case study
-        </Link>
+        </a>
       </p>
       <div className="workcard-image">
-        <img src={src} alt="brand" />
+        <img src={src} alt="brand" className="project-image" />
+        {dot ? <img src={dot} alt="dots" className="rightdot" /> : null}
+        {dot ? <img src={dot} alt="dots" className="leftdot" /> : null}
       </div>
       <p className="title">{title}</p>
       <p style={{ fontSize: 14, color: "#f7f7f7" }}>{work}</p>

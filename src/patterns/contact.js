@@ -115,7 +115,7 @@ const Contact = () => {
         </p>
         <li>
           <img src={hello} alt="hello" />
-          <span>Hello folks at ZEVO Corporation!</span>
+          <span>Hello folks!</span>
         </li>
 
         <form onSubmit={handleSubmit}>
@@ -152,6 +152,14 @@ const Contact = () => {
               value={formData.amount}
               onChange={handleChange}
             />
+            <select style={{marginLeft:'-0.6em'}}>
+              <option value="INR">
+                INR
+              </option>
+              <option value="USD">
+                USD
+              </option>
+            </select>
             to &nbsp; complete &nbsp; a
             <select
               name="category"
@@ -205,11 +213,11 @@ const Contact = () => {
               onChange={handleChange}
             />
             or &nbsp; at
-            <select>
+            {/* <select>
               <option value="" disabled selected hidden>
                 91
               </option>
-            </select>
+            </select> */}
             <input
               type="number"
               placeholder="Eg. 7789654123"

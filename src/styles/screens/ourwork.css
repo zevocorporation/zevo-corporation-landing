@@ -76,14 +76,18 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .ourwork .ourwork-landing {
-    padding: 0 50px;
-  }
-  .ourwork .image-container {
-    padding: 50px;
-  }
-  .ourwork .work-block {
+@media screen and (max-width:768px){
+    .ourwork .ourwork-landing{
+        padding: 0 50px;
+    }
+    .ourwork .image-container{
+        padding: 50px;
+    }
+    .ourwork .work-block{
+        grid-template-columns: 1fr;
+    }
+    .ourwork .image-container .block-one,
+  .ourwork .image-container .block-two {
     grid-template-columns: 1fr;
   }
 }
