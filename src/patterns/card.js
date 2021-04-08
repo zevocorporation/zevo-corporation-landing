@@ -30,15 +30,12 @@ export const Card = ({ name, src, description }) => {
   );
 };
 
-export const CareerCard = ({ title, src }) => {
+export const CareerCard = ({ title, src, detail }) => {
   return (
     <div className="careerCard" data-aos="fade-up">
       <img src={src} alt="card" />
       <p className="card-title">{title}</p>
-      <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in
-        amet lacus, venenatis, sit eget placerat. Ac sit viverra in.
-      </p>
+      <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{detail}</p>
     </div>
   );
 };
@@ -73,24 +70,19 @@ export const StaffCard = ({ title, src, work }) => {
   );
 };
 
-export const ProcessCard = ({ title, num, img }) => {
+export const ProcessCard = ({ title, num, img, detail, extra }) => {
   return (
     <div className="process-card" data-aos="fade-up">
       <div className="block-left">
         <span className="number">{num}</span>
         <p className="card-title">{title}</p>
         <p style={{ color: "#f7f7f7", lineHeight: "25px" }} className="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra netus
-          consectetur donec diam, et volutpat fames enim.
+          {detail}
         </p>
         <img src={img} alt="process" className="process-img" />
       </div>
       <div className="block-right">
-        <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis purus
-          fermentum, turpis eget sapien. Mauris est etiam enim pulvinar purus
-          id. Libero iaculis nisi diam fuss.
-        </p>
+        <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{extra}</p>
       </div>
       <img src={rightarrow} alt="rightarrow" className="right-arrow" />
       <img src={mobrightarrow} alt="rightarrow" className="mob-right-arrow" />
@@ -98,23 +90,16 @@ export const ProcessCard = ({ title, num, img }) => {
   );
 };
 
-export const ProcessCardRight = ({ title, num, img }) => {
+export const ProcessCardRight = ({ title, num, img, detail, extra }) => {
   return (
     <div className="process-card-two" data-aos="fade-up">
       <div className="block-left">
-        <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis purus
-          fermentum, turpis eget sapien. Mauris est etiam enim pulvinar purus
-          id. Libero iaculis nisi diam fuss.
-        </p>
+        <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{detail}</p>
       </div>
       <div className="block-right">
         <span className="number">{num}</span>
         <p className="card-title">{title}</p>
-        <p className="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra netus
-          consectetur donec diam, et volutpat fames enim.
-        </p>
+        <p className="text">{extra}</p>
         <img src={img} alt="process" className="process-img" />
       </div>
       <img src={leftarrow} alt="leftarrow" className="left-arrow" />

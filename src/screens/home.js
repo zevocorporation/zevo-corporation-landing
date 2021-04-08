@@ -71,8 +71,7 @@ const Home = () => {
               of agile crews of UI.UX designers, backend, frontend, engineers,
               dapp, smart contract, layer 2, core blockchain developers, product
               developers, managers, SME's, and artists with professional
-              expertise, and understandings in decentralized market for more
-              than 4+ years.
+              expertise, and understandings in decentralized market for years.
             </p>
             <span className="span">Got a product idea ? Let's discuss</span>
           </div>
@@ -87,7 +86,7 @@ const Home = () => {
           <Card
             name="Mission"
             src={card1}
-            description="To achieve 40%-60% gross economic growth for the stability of our techno-artists community, rendering and expanding various decentralized technical services and contribute 25% net economy for the rural growth, in the form of liberal arts, and literatures, for in this fiscal year."
+            description="To achieve 40%-60% gross economic growth for the stability of our techno-artists community, rendering and expanding various decentralized technical services and contribute 25% net economy for the rural growth, in the form of liberal arts, and literatures, in this fiscal year."
           />
           <Card
             name="Vision"
@@ -95,7 +94,11 @@ const Home = () => {
             description="Establishing a novel, Decentralized Information Technology (DIT) network accross the globe, with 
             autonomous workflows, exploitation free, independent, freewill workculture, otherwise establishing a futuristic decentralized techno-artists community."
           />
-          <Card name="Values" src={card3} description="" />
+          <Card
+            name="Values"
+            src={card3}
+            description="We, strategize our mission based on sustainable economy, impacts on the culture, natural resources and collectively, the humanity in long term thus preceeding technovations without giving up the humanity, nature, emotions, and racing bluntly with capital obsessions."
+          />
         </div>
 
         <div className="experience">
@@ -132,8 +135,9 @@ const Home = () => {
         <div className="work">
           <p className="block-title">Our Work</p>
           <p>
-            Find our latest works, for expertise validation and professional
-            asessments.
+            Our works speak for us. Explore updates on our latest works with
+            global alliances to understand and percieve our efforts and vision
+            with one leap ahead of commencing the journey with us.
           </p>
           <button>
             <span>See all works</span>
@@ -173,13 +177,13 @@ const Home = () => {
         <div className="services" id="services">
           <div className="block-header">
             <div>
-              <p className="block-title">
-                Our services would be your best benefit
-              </p>
+              <p className="block-title">Our services</p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Malesuada tristique id facilisi metus rhoncus, nunc est. Cras
-                pulvinar.
+                We add life to your ideas and soul to your value propositions,
+                so your clients and we stay forever with futuristic
+                understanding about the product ahead of time in the market,
+                thus pioneering forever as leaders in our respective industries
+                sustainably
               </p>
             </div>
             <div>
