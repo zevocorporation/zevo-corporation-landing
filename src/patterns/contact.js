@@ -46,7 +46,6 @@ const Contact = () => {
     return true;
   }
   const handleSubmit = (e) => {
-    setIsLoad(true)
     e.preventDefault();
     const res = validateEmail(formData.email);
     const val = validate(formData);
@@ -57,6 +56,7 @@ const Contact = () => {
     }
 
     if (res && val) {
+      setIsLoad(true)
       const {
         username,
         work,
@@ -97,6 +97,7 @@ const Contact = () => {
               </div>
             );
             setFormData(initailState);
+            setIsLoad(false)
           },
           (error) => {
             toast.error("Something went wrong");
@@ -250,10 +251,10 @@ const Contact = () => {
               </li>
             </div>
             <div className="button">
-              <button className="primary" type="submit" disabled={isLoad}>
+              <button className="primary" type="submit" disabled={isLoad}  style={{opacity:isLoad ? '0.5':'1'}}>
                 Send Message
               </button>
-              <button className="secondary" onClick={handleClear} style={{opacity:isLoad ? '0.5':'1'}}>
+              <button className="secondary" onClick={handleClear}>
                 Discard Message
               </button>
             </div>
