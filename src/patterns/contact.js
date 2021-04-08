@@ -19,12 +19,12 @@ const initailState = {
   duration: "",
   email: "",
   mobileno: "",
-  currency:""
+  currency: "",
 };
 
 const Contact = () => {
   const [formData, setFormData] = useState(initailState);
-  const [isLoad,setIsLoad] = useState(false)
+  const [isLoad, setIsLoad] = useState(false);
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -46,7 +46,7 @@ const Contact = () => {
     return true;
   }
   const handleSubmit = (e) => {
-    setIsLoad(true)
+    setIsLoad(true);
     e.preventDefault();
     const res = validateEmail(formData.email);
     const val = validate(formData);
@@ -66,7 +66,7 @@ const Contact = () => {
         amount,
         email,
         mobileno,
-        currency
+        currency,
       } = formData;
 
       let templateParams = {
@@ -78,7 +78,7 @@ const Contact = () => {
         amount,
         email,
         mobileno,
-        currency
+        currency,
       };
 
       emailjs
@@ -101,7 +101,7 @@ const Contact = () => {
           (error) => {
             toast.error("Something went wrong");
             setFormData(initailState);
-            setIsLoad(false)
+            setIsLoad(false);
           }
         );
     }
@@ -158,13 +158,14 @@ const Contact = () => {
               value={formData.amount}
               onChange={handleChange}
             />
-            <select name="currency" value={formData.currency} onChange={handleChange} style={{marginLeft:'-0.6em'}}>
-              <option value="INR">
-                INR
-              </option>
-              <option value="USD">
-                USD
-              </option>
+            <select
+              name="currency"
+              value={formData.currency}
+              onChange={handleChange}
+              style={{ marginLeft: "-0.6em" }}
+            >
+              <option value="INR">INR</option>
+              <option value="USD">USD</option>
             </select>
             to &nbsp; complete &nbsp; a
             <select
@@ -200,6 +201,7 @@ const Contact = () => {
               <option value="Web3 / Ethers Integration">
                 Web3 / Ethers Integration
               </option>
+              <option value="others">Others</option>
               <option value="Dapp Architechting">Dapp Architechting</option>
             </select>
             on &nbsp; or &nbsp; around &nbsp; a
@@ -253,7 +255,11 @@ const Contact = () => {
               <button className="primary" type="submit" disabled={isLoad}>
                 Send Message
               </button>
-              <button className="secondary" onClick={handleClear} style={{opacity:isLoad ? '0.5':'1'}}>
+              <button
+                className="secondary"
+                onClick={handleClear}
+                style={{ opacity: isLoad ? "0.5" : "1" }}
+              >
                 Discard Message
               </button>
             </div>
