@@ -60,7 +60,7 @@ const Careers = () => {
               obsessions draining the individuals efforts in our work culture.
               Transparency is the secret of our strength and success as a crew.
             </p>
-            <button className="secondary-btn">See open roles</button>
+           <a href="#jobs"> <button className="secondary-btn">See open roles</button></a>
           </div>
           <div className="block-right" >
             <div className="image-block-one">
@@ -125,7 +125,7 @@ const Careers = () => {
           </div>
         </div>
 
-        <div className="job">
+        <div className="job" id="jobs">
           <p className="block-title">explore job openings</p>
           <p>
             Be authentic. That’s who we’re inviting. Our culture celebrates and
