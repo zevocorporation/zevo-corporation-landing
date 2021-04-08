@@ -11,7 +11,6 @@ import rightarrow from "../assets/icons/right-arrow.svg";
 import mobrightarrow from "../assets/icons/mobrightarrow.svg";
 
 export const Card = ({ name, src, description }) => {
-
   return (
     <div className="card">
       <p className="card-title">{name}</p>
@@ -99,25 +98,41 @@ export const ProcessCardRight = ({ title, num, img, detail, extra }) => {
   );
 };
 
-export const WorkCard = ({ title, work, src, bgcolor, fcolor, dot, pdf }) => {
+export const WorkCard = ({
+  title,
+  work,
+  src,
+  bgcolor,
+  fcolor,
+  dot,
+  pdf,
+  details,
+  prototype
+}) => {
   return (
     <div className="work-card">
-      <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>
-        
-      </p>
-      <p
+      <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{details}</p>
+     <div style={{display:'flex',alignItems:'center',gridGap:16}}>
+     <p
         className="card-link"
         style={{ background: `${bgcolor}`, color: `${fcolor}` }}
       >
-        <a href={pdf} style={{ color: `${fcolor}` }} download target="_blank" rel="noreferrer">
+        <a
+          href={pdf}
+          style={{ color: `${fcolor}` }}
+          download
+          target="_blank"
+          rel="noreferrer"
+        >
           Case study
         </a>
       </p>
-     <a>View prototype</a>
+      <a href={prototype} style={{color:'skyblue'}}>View prototype</a>
+     </div>
       <div className="workcard-image">
         <img src={src} alt="brand" className="project-image" />
-        {dot?<img src={dot} alt="dots" className="rightdot" />:null}
-        {dot?<img src={dot} alt="dots" className="leftdot" />:null}
+        {dot ? <img src={dot} alt="dots" className="rightdot" /> : null}
+        {dot ? <img src={dot} alt="dots" className="leftdot" /> : null}
       </div>
       <p className="title">{title}</p>
       <p style={{ fontSize: 14, color: "#f7f7f7" }}>{work}</p>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 import Header from "../patterns/header";
 import Footer from "../patterns/footer";
@@ -15,7 +15,7 @@ import {
 import "../styles/screens/about.css";
 
 //importing media assets
-import aboutImg from "../assets/images/about.png";
+import aboutImg from "../assets/images/about.jpg";
 import person1 from "../assets/cards/chairman.jpg";
 import person2 from "../assets/cards/ceo.jpg";
 import person3 from "../assets/cards/cto.jpg";
@@ -29,15 +29,14 @@ import person10 from "../assets/cards/Jaisurya.jpg";
 import person11 from "../assets/cards/ceo.jpg";
 import process1 from "../assets/cards/process1.svg";
 import story from "../assets/images/story.svg";
-import processtwo from '../assets/images/two.png'
-import processthree from '../assets/images/three.png'
-import processfour from '../assets/images/four.png'
-import processfive from '../assets/images/five.png'
-import processsix from '../assets/images/six.png'
-import processseven from '../assets/images/seven.png'
+import processtwo from "../assets/images/two.png";
+import processthree from "../assets/images/three.png";
+import processfour from "../assets/images/four.png";
+import processfive from "../assets/images/five.png";
+import processsix from "../assets/images/six.png";
+import processseven from "../assets/images/seven.png";
 
 const About = () => {
-
   return (
     <>
       <div className="about">
@@ -78,9 +77,11 @@ const About = () => {
               eight within a clocking revenue of 12 Lakh in 3 months, since the
               crew's reappearance in January, 2021.
             </p>
-           <Link to="/contactus"><button>Have a project idea? Get in touch</button></Link>
+            <Link to="/contactus">
+              <button>Have a project idea? Get in touch</button>
+            </Link>
           </div>
-          <div className="video" >
+          <div className="video">
             <img src={story} alt="story" />
           </div>
         </div>

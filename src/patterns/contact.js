@@ -24,6 +24,7 @@ const initailState = {
 
 const Contact = () => {
   const [formData, setFormData] = useState(initailState);
+  const [isLoad,setIsLoad] = useState(false)
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -45,6 +46,7 @@ const Contact = () => {
     return true;
   }
   const handleSubmit = (e) => {
+    setIsLoad(true)
     e.preventDefault();
     const res = validateEmail(formData.email);
     const val = validate(formData);
@@ -99,6 +101,7 @@ const Contact = () => {
           (error) => {
             toast.error("Something went wrong");
             setFormData(initailState);
+            setIsLoad(false)
           }
         );
     }
@@ -247,10 +250,10 @@ const Contact = () => {
               </li>
             </div>
             <div className="button">
-              <button className="primary" type="submit">
+              <button className="primary" type="submit" disabled={isLoad}>
                 Send Message
               </button>
-              <button className="secondary" onClick={handleClear}>
+              <button className="secondary" onClick={handleClear} style={{opacity:isLoad ? '0.5':'1'}}>
                 Discard Message
               </button>
             </div>
