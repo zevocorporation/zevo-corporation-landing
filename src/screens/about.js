@@ -104,7 +104,7 @@ const About = () => {
               num="02"
               title="DOCUMENTATION"
               img={process1}
-              extra="Documentation commences sincethe architechting phase and continues throughout the design, development cycles and delivery which become the pre-requisites for case studies and post analysis of the cycle"
+              extra="Documentation commences since the architechting phase and continues throughout the design, development cycles and delivery which become the pre-requisites for case studies and post analysis of the cycle"
               detail="Documentations, becomes the asset of understanding about the product and it's value propositions, for a sustainable penetration"
             />
             <ProcessCard
