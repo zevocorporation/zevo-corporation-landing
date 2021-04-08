@@ -10,7 +10,7 @@ import "../styles/screens/ourwork.css";
 
 //importing media assets
 import ourworkImg from "../assets/images/ourwork.jpg";
-import idea from "../assets/images/idea.svg";
+import idea from "../assets/images/idea.png";
 import imac from "../assets/cards/imac.jpg";
 import macbook from "../assets/cards/macbook.svg";
 import nftway from "../assets/images/nftway.jpg";
