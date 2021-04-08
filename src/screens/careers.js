@@ -25,12 +25,6 @@ import community from "../assets/cards/community.svg";
 
 const Careers = () => {
 
-  function redirect() {
-    window.location.replace(
-      "https://www.linkedin.com/company/zevo-corporation"
-    );
-  }
-
   return (
     <>
       <div className="career">
@@ -147,12 +141,12 @@ const Careers = () => {
                     <td>{job.exp}</td>
                     <td>{job.location}</td>
                     <td style={{ display: "flex", alignItems: "center" }}>
-                      <span
-                        onClick={() => redirect()}
-                        style={{ cursor: "pointer" }}
+                      <a
+                        href={job.link}
+                        style={{ cursor: "pointer",color:'#6e7dff' }}
                       >
                         APPLY NOW{" "}
-                      </span>
+                      </a>
                     </td>
                   </tr>
                 </>

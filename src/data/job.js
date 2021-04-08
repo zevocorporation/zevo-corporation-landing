@@ -4,12 +4,14 @@ export const jobs = [
     dep: "Information Technology",
     exp: "Fresher",
     location: "Remote | Chennai, INDIA",
+    link:"https://www.linkedin.com/company/zevo-corporation"
   },
   {
     title: "Intern,blockchain",
     dep: "Information Technology",
     exp: "Fresher",
     location: "Remote | Chennai, INDIA",
+    link:"https://www.linkedin.com/company/zevo-corporation"
   }
   // {
   //     title:"Senior UX Designer",
