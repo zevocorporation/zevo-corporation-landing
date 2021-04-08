@@ -17,7 +17,6 @@ import landing from "../assets/images/home.jpg";
 import map from "../assets/images/map.svg";
 import imac from "../assets/cards/imac.jpg";
 import macbook from "../assets/cards/macbook.svg";
-import auli from "../assets/cards/auli.svg";
 import card1 from "../assets/cards/card1.svg";
 import card2 from "../assets/cards/card2.svg";
 import card3 from "../assets/cards/card3.svg";
@@ -31,8 +30,10 @@ import bluedot from "../assets/images/bluedot.svg";
 import metrono from "../assets/pdf/metrono.pdf";
 import greendot from "../assets/images/greendot.svg";
 import yellowdot from "../assets/images/yellowdot.svg";
+import nftway from "../assets/images/nftway.jpg";
 import preet from "../assets/pdf/preet.pdf";
 import ngauge from "../assets/pdf/ngauge.pdf";
+import thenftway from "../assets/pdf/thenftway.pdf";
 
 const Home = () => {
   return (
@@ -142,6 +143,7 @@ const Home = () => {
               src={macbook}
               dot={yellowdot}
               pdf={preet}
+              prototype="https://www.figma.com/proto/F1dHWKwWoEjmz13r2hHwHN/ZEVO-DESIGNS-PORTFOLIO?node-id=1%3A6&scaling=min-zoom"
               bgcolor="#EFCD3D"
               details="As a leading interior designer, the folks at Preet Interior Design aimed provide exceptional customer service. They offer clients a unique and innovative approach to tackling all their design needs. Our goal was to provide their customers with an application that was easy to use as well as elegant to look on to."
             />
@@ -151,6 +153,7 @@ const Home = () => {
               src={imac2}
               dot={bluedot}
               pdf={metrono}
+              prototype="https://www.figma.com/proto/F1dHWKwWoEjmz13r2hHwHN/ZEVO-DESIGNS-PORTFOLIO?node-id=1%3A2&scaling=min-zoom"
               bgcolor="#EFCD3D"
               details="Metrono is a mealbox subscription model for bachelors where students, working 
               officials and people who stay away from won't have to go to restarunts to have meals, 
@@ -165,15 +168,18 @@ const Home = () => {
               src={imac}
               dot={greendot}
               pdf={ngauge}
+              prototype="https://www.figma.com/proto/ezjEiW1CXmsBpmdRuk90du/Labour-Webapp?node-id=359%3A1441&scaling=fit-width"
               bgcolor="#1AC1A3"
               details="nGauge labour app helps you interact with all
               your employees from a single unified platform and
               provide an enriched experience"
             />
             <WorkCard
-              title="X Trek "
+              title="The NFT way "
               work="UI UX Design & Development"
-              src={auli}
+              src={nftway}
+              pdf={thenftway}
+              prototype="https://www.figma.com/proto/WJJgvBe4Z6AGrllMSPj9GF/thNFTway-ZEVO?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1"
               bgcolor="#fff"
               fcolor="black"
               details="theNFTway helps techno creatives to sell their craft through the platform. This helps them to get reach for their craft and earn money as well."

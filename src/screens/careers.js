@@ -11,7 +11,7 @@ import { jobs } from "../data/job";
 import "../styles/screens/careers.css";
 
 //importing media assets
-import careerImg from "../assets/images/careers.png";
+import careerImg from "../assets/images/careers.jpg";
 import frame1 from "../assets/cards/careercard1.svg";
 import frame2 from "../assets/cards/careercard2.svg";
 import frame3 from "../assets/cards/careercard3.svg";

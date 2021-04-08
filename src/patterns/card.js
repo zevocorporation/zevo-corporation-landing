@@ -107,11 +107,13 @@ export const WorkCard = ({
   dot,
   pdf,
   details,
+  prototype
 }) => {
   return (
     <div className="work-card">
       <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{details}</p>
-      <p
+     <div style={{display:'flex',alignItems:'center',gridGap:16}}>
+     <p
         className="card-link"
         style={{ background: `${bgcolor}`, color: `${fcolor}` }}
       >
@@ -125,6 +127,8 @@ export const WorkCard = ({
           Case study
         </a>
       </p>
+      <a href={prototype} style={{color:'skyblue'}}>View prototype</a>
+     </div>
       <div className="workcard-image">
         <img src={src} alt="brand" className="project-image" />
         {dot ? <img src={dot} alt="dots" className="rightdot" /> : null}

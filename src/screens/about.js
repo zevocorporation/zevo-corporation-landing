@@ -15,7 +15,7 @@ import {
 import "../styles/screens/about.css";
 
 //importing media assets
-import aboutImg from "../assets/images/about.png";
+import aboutImg from "../assets/images/about.jpg";
 import person1 from "../assets/cards/chairman.jpg";
 import person2 from "../assets/cards/ceo.jpg";
 import person3 from "../assets/cards/cto.jpg";
