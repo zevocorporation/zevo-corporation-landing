@@ -28,7 +28,7 @@ import person9 from "../assets/cards/vimal.jpg";
 import person10 from "../assets/cards/Jaisurya.jpg";
 import person11 from "../assets/cards/ceo.jpg";
 import process1 from "../assets/cards/process1.svg";
-import story from "../assets/images/story.svg";
+import story from "../assets/images/story.png";
 import processtwo from "../assets/images/two.png";
 import processthree from "../assets/images/three.png";
 import processfour from "../assets/images/four.png";
