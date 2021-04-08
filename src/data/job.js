@@ -1,10 +1,16 @@
 export const jobs = [
   {
-    title: "Intern, React dev",
+    title: "Intern,frontend",
     dep: "Information Technology",
     exp: "Fresher",
     location: "Remote | Chennai, INDIA",
   },
+  {
+    title: "Intern,blockchain",
+    dep: "Information Technology",
+    exp: "Fresher",
+    location: "Remote | Chennai, INDIA",
+  }
   // {
   //     title:"Senior UX Designer",
   //     dep:"UI & UX ",

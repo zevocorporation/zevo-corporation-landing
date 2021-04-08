@@ -183,4 +183,7 @@ td:nth-child(4) {
     font-size: 14px;
     letter-spacing: 0.05em;
   }
+  .career .job table td:nth-child(1){
+    margin-right: 0.2em;
+  }
 }
