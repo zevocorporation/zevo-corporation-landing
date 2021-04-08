@@ -1,56 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@font-face{
-    src: url(./assets/fonts/GTWalsheimPro-Regular.ttf);
-    font-family: 'GT Regular';
+@font-face {
+  src: url(./assets/fonts/GTWalsheimPro-Regular.ttf);
+  font-family: "GT Regular";
 }
 
-@font-face{
-    src: url(./assets/fonts/LEMONMILK-Regular.otf);
-    font-family: 'Lemon milk Regular';
+@font-face {
+  src: url(./assets/fonts/LEMONMILK-Regular.otf);
+  font-family: "Lemon milk Regular";
 }
 
-body{
-    font-family: 'GT Regular';
-    color: #fff;
+body {
+  font-family: "GT Regular";
+  color: #fff;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 }
 
-.primary-btn{
-    background: #2025EE;
-    border-radius: 2px;
-    padding: 10px 16px;
-    outline: none;
-    border: none;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
+.primary-btn {
+  background: #2025ee;
+  border-radius: 2px;
+  padding: 10px 16px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
 }
 
-.secondary-btn{
-    border: 2px solid #6E7DFF;
-    padding: 5px 10px;
-    font-size: 1em;
-    outline: none;
-    background: transparent;
-    color: #fff;
-    width: fit-content;
+.secondary-btn {
+  border: 2px solid #6e7dff;
+  padding: 5px 10px;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  width: fit-content;
 }
 
-
-.secondary-text{
-    font-size: 1em;
-    line-height: 25px;
-    color: #F7F7F7;
+.secondary-text {
+  font-size: 1em;
+  line-height: 25px;
+  color: #f7f7f7;
 }
 
+.terms {
+  background: #000;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 70px;
+}
 
+.terms h2,
+h3 {
+  margin-bottom: 1.5em;
+  font-family: "Lemon milk Regular";
+}
+
+.terms p,
+li {
+  line-height: 25px;
+  margin-bottom: 1em;
+}
+
+.terms li {
+  margin-left: 1em;
+  list-style-type: disc;
+}
+
+@media (max-width: 768px) {
+  .terms {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .terms {
+    padding: 20px 30px;
+  }
+}
