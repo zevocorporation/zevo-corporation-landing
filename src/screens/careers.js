@@ -43,21 +43,22 @@ const Careers = () => {
         <div className="life">
           <div className="block-left">
             <p className="block-title">Life At Zevo</p>
+
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
-              purus fermentum, turpis eget sapien. Mauris est etiam enim
-              pulvinar purus id. Libero iaculis nisi diam fusce eget. Pretium,
-              erat quis vitae, orci interdum ante. Phasellus est leo congue
-              purus tempus aliquam morbi. Libero ornare arcu diam iaculis
-              vulputate vel facilisis aliquam faucibus.
+              We offer a warm and amiable work freedom that caters to an
+              individual’s attainment of personal goals while also accomplishing
+              the desired community goals. Our working partners are an
+              enthusiastic group of empowered youth with great vision for the
+              future. Each of them will accompany you in every step of your
+              journey with our community and will ensure you are comfortable
+              throughout.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
-              purus fermentum, turpis eget sapien. Mauris est etiam enim
-              pulvinar purus id. Libero iaculis nisi diam fusce eget. Pretium,
-              erat quis vitae, orci interdum ante. Phasellus est leo congue
-              purus tempus aliquam morbi. Libero ornare arcu diam iaculis
-              vulputate vel facilisis aliquam faucibus.
+              Here at Zevo Corporation, we believe that work and play go hand in
+              hand. Optimal output comes from optimal working partner
+              satisfaction. There are zero prejudice, bias and capital
+              obsessions draining the individuals efforts in our work culture.
+              Transparency is the secret of our strength and success as a crew.
             </p>
             <button className="secondary-btn">See open roles</button>
           </div>
@@ -84,24 +85,51 @@ const Careers = () => {
         <div className="values">
           <p className="block-title">Our Values</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
-            purus fermentum, turpis eget sapien. Mauris est etiam enim pulvinar
-            purus id. Libero iaculis nisi diam fuss.
+            We, strategize our mission based on sustainable economy, impacts on
+            the culture, natural resources and collectively, the humanity in
+            long term thus preceeding technovations without giving up the
+            humanity, nature, emotions, and racing bluntly with capital
+            obsessions.
           </p>
           <div className="wrapper">
-            <CareerCard title="Your work matters" src={workmatters} />
-            <CareerCard title="Flexible vacation policy" src={vacation} />
-            <CareerCard title="health & wellness" src={health} />
-            <CareerCard title="beautiful workplace" src={workplace} />
-            <CareerCard title="catered meals" src={meals} />
-            <CareerCard title="strong community" src={community} />
+            <CareerCard
+              title="Your work matters"
+              src={workmatters}
+              detail="Be comfortable and flexible as we guarantee freedom of work wherever you demand"
+            />
+            <CareerCard
+              title="Flexible vacation policy"
+              src={vacation}
+              detail="We want our crew to be healthy, travel often, get time to give back, with paid time-offs."
+            />
+            <CareerCard
+              title="Unbiased work culture"
+              src={health}
+              detail="We are united under differences thus creating a culture that values diverse perspectives and backgrounds."
+            />
+            <CareerCard
+              title="Surreal workspace"
+              src={workplace}
+              detail="Workspace with sustainable greenery, artworks, and natural accompaniments to relax the minds flexibly"
+            />
+            <CareerCard
+              title="catered meals"
+              src={meals}
+              detail="Food is the fuel, of existence, for artists. Our culinary team provides organic, farmed meals free of cost."
+            />
+            <CareerCard
+              title="strong community"
+              src={community}
+              detail="We offer opportunities to our community regardless of race, color, religion, nation, age, and untouchabilities."
+            />
           </div>
         </div>
 
         <div className="job">
           <p className="block-title">explore job openings</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu lorem.
+            Be authentic. That’s who we’re inviting. Our culture celebrates and
+            supports unique talents, souls and truth within.
           </p>
           <table >
             <tr>

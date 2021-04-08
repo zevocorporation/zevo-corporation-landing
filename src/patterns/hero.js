@@ -36,11 +36,11 @@ export const HeroCenter = ({ title, page }) => {
     <div className="hero-center">
       <p className="hero-title">{title}</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu sociis at
-        augue id consequat nec. Scelerisque quis tortor malesuada mattis. At
-        sapien ipsum blandit ornare sit fames viverra. Proin sed malesuada
-        ornare eu sagittis eu. Commodo morbi sed augue dui ornare varius
-        dignissim. Neque mauris.
+        We are zealous and art driven community, towards creating the finest and
+        most sound solution decentralized applications, architechture and design
+        experience to solve all your business problems. We ensure that we tackle
+        all our tasks with professionalism and a sense of social responsibility.
+        Our stories are the inspirations and throttle for the community.
       </p>
       <div>
         <Link to="/contactus"><button>Got a product idea ? Let's discuss</button></Link>
@@ -55,11 +55,12 @@ export const HeroCareer = () => {
     <div className="hero-career">
       <p className="hero-title">We at zevo Navigate Further, Together</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        ullamcorper tincidunt mauris dignissim malesuada mollis purus ac. At mi
-        massa imperdiet scelerisque morbi vel. Eget in et vitae consectetur
-        arcu, felis ipsum semper venenatis. Sed proin nec libero ut dis
-        dictumst. Lobortis.
+        We are zealous and art driven community, towards creating the finest and
+        most sound solution decentralized applications, architechture and design
+        experience to solve all your business problems. We ensure that we tackle
+        all our tasks with professionalism and a sense of social responsibility.
+        Our working partners are our core strength and we guarantee their utmost
+        comfort and satisfaction during their journey with us.
       </p>
       {/* <div className="block-input">
         <div>
