@@ -3,7 +3,7 @@ export const jobs = [
     title: "UI UX Designer",
     dep: "UI & UX ",
     exp: "0 - 5 Years",
-    location: "Chennai, India",
+    location: "Remote | Chennai, INDIA",
   },
   // {
   //     title:"Senior UX Designer",

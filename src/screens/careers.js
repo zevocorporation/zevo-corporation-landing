@@ -1,8 +1,4 @@
-import React, { useEffect } from "react";
-
-//Importing animation
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 import Header from "../patterns/header";
 import { HeroCareer } from "../patterns/hero";
@@ -28,9 +24,6 @@ import health from "../assets/cards/health.svg";
 import community from "../assets/cards/community.svg";
 
 const Careers = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   function redirect() {
     window.location.replace(
@@ -48,7 +41,7 @@ const Careers = () => {
         </div>
 
         <div className="life">
-          <div className="block-left" data-aos="fade-up-left">
+          <div className="block-left">
             <p className="block-title">Life At Zevo</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
@@ -68,7 +61,7 @@ const Careers = () => {
             </p>
             <button className="secondary-btn">See open roles</button>
           </div>
-          <div className="block-right" data-aos="zoom-in-right">
+          <div className="block-right" >
             <div className="image-block-one">
               <div>
                 <img src={frame1} alt="frame1" />
@@ -110,7 +103,7 @@ const Careers = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu lorem.
           </p>
-          <table data-aos="zoom-out">
+          <table >
             <tr>
               <th>Job title</th>
               <th>Department</th>

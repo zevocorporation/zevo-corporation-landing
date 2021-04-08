@@ -170,11 +170,26 @@
     height: fit-content;
     left: 50%;
     transform: translateX(-50%);
+    margin: 3em 0;
 }
 
-.work-card .workcard-image img{
+.work-card .workcard-image .project-image{
    margin-right: 0;
    width: 100%;
+}
+
+.work-card .workcard-image .rightdot{
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    z-index: -1;
+}
+
+.work-card .workcard-image .leftdot{
+    position: absolute;
+    left: -10%;
+    bottom: -10%;
+    z-index: -1;
 }
 
 @media screen and (max-width:768px){

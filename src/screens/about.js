@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
-
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import { Link } from 'react-router-dom'
 
 import Header from "../patterns/header";
 import Footer from "../patterns/footer";
@@ -31,11 +29,14 @@ import person10 from "../assets/cards/Jaisurya.jpg";
 import person11 from "../assets/cards/ceo.jpg";
 import process1 from "../assets/cards/process1.svg";
 import story from "../assets/images/story.svg";
+import processtwo from '../assets/images/two.png'
+import processthree from '../assets/images/three.png'
+import processfour from '../assets/images/four.png'
+import processfive from '../assets/images/five.png'
+import processsix from '../assets/images/six.png'
+import processseven from '../assets/images/seven.png'
 
 const About = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   return (
     <>
@@ -47,7 +48,7 @@ const About = () => {
         </div>
 
         <div className="story">
-          <div data-aos="zoom-out">
+          <div>
             <p className="block-title">and this is our story...</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
@@ -57,9 +58,9 @@ const About = () => {
               purus tempus aliquam morbi. Libero ornare arcu diam iaculis
               vulputate vel facilisis aliquam faucibus.
             </p>
-            <button>Have a project idea? Get in touch</button>
+           <Link to="/contactus"><button>Have a project idea? Get in touch</button></Link>
           </div>
-          <div className="video" data-aos="zoom-in">
+          <div className="video" >
             <img src={story} alt="story" />
           </div>
         </div>
@@ -73,19 +74,19 @@ const About = () => {
           </p>
           <div className="process-card-container">
             <ProcessCard num="01" title="Requirements" img={process1} />
-            <ProcessCardRight num="02" title="DOCUMENTATION" img={process1} />
-            <ProcessCard num="03" title="UI & UX Design" img={process1} />
+            <ProcessCardRight num="02" title="DOCUMENTATION" img={processtwo} />
+            <ProcessCard num="03" title="UI & UX Design" img={processthree} />
             <ProcessCardRight
               num="04"
               title="handoff & development"
-              img={process1}
+              img={processfour}
             />
-            <ProcessCard num="05" title="ACCEPTANCE & TESTING" img={process1} />
-            <ProcessCardRight num="06" title="Delivery" img={process1} />
+            <ProcessCard num="05" title="ACCEPTANCE & TESTING" img={processfive} />
+            <ProcessCardRight num="06" title="Delivery" img={processsix} />
             <ProcessCard
               num="07"
               title="Support and Maintenance"
-              img={process1}
+              img={processseven}
             />
           </div>
         </div>

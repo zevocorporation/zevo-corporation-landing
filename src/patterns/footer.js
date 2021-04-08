@@ -1,9 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-
-//Importing animation
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 //importing styles
 import "../styles/patterns/footer.css";
@@ -21,44 +17,62 @@ import twitter from "../assets/icons/twitter.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 
 const Footer = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   return (
     <div className="footer">
       <div className="footer-block">
         <div className="block-one">
+          <Link to="/">
           <img
             src={logo}
             alt="logo"
             className="logo"
             style={{ marginBottom: "1em" }}
-            data-aos="flip-right"
-          />
+          /></Link>
           <p>
             F2 Plot 14, Vignesh Athreya Apartment, santhamma street, CST Nagar,
             East Tambaram, Chennai, INDIA - 600 059.
           </p>
-          <div className="social-icons" data-aos="fade-up">
-            <img src={facebook} alt="facebook" />
-            <img src={instagram} alt="instagram" />
-            <img src={twitter} alt="twitter" />
-            <img src={linkedin} alt="linkedin" />
+          <div className="social-icons">
+            <img 
+              src={facebook} 
+              alt="facebook" 
+              onClick={
+                () => window.location.replace("https://www.facebook.com/Zevo-Corporation-349706043090666/")} 
+            />
+            <img 
+              src={instagram} 
+              alt="instagram"
+              onClick={
+                () => window.location.replace("https://www.instagram.com/zevo_corporation/")} 
+            />
+            <img 
+              src={twitter} 
+              alt="twitter" 
+              onClick={
+                () => window.location.replace("https://twitter.com/ZevoUx?s=08")} 
+            />
+            <img 
+              src={linkedin} 
+              alt="linkedin"
+              onClick={() => window.location.replace("https://www.linkedin.com/company/zevo-corporation")} 
+            />
           </div>
         </div>
         <div className="block-two">
           <p>Quick links</p>
           <ul>
-            <li>About us</li>
-            <li>Blogs</li>
-            <li>Our work</li>
-            <li>FAQs</li>
+            <li><Link to="about">About us</Link></li>
+            {/* <li>Blogs</li> */}
+            <li><Link to="/our_work">Our work</Link></li>
+            {/* <li>FAQs</li> */}
             <li>
+              <Link to="careers">
               Careers
               <span style={{ color: "#6E7DFF", fontSize: 14, marginLeft: 10 }}>
                 We are hiring
               </span>
+              </Link>
             </li>
           </ul>
         </div>
@@ -80,11 +94,11 @@ const Footer = () => {
             </li>
             <li>
               <img src={phone} alt="phone" />
-              <span>+91 89395 56924</span>
+              <span>+91 9696485604</span>
             </li>
             <li>
               <img src={location} alt="location" />
-              <span>Chennai, South Asia</span>
+              <span>Chennai, INDIA</span>
             </li>
           </ul>
         </div>

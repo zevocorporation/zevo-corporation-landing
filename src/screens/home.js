@@ -1,8 +1,5 @@
-import React, { useEffect } from "react";
-
-//Importing animation
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 //Importing styles
 import "../styles/screens/home.css";
@@ -17,33 +14,27 @@ import ServiceCard from "../patterns/serviceCard";
 
 //Importing media assets
 import landing from "../assets/images/home.jpg";
-import google from "../assets/partners/google.svg";
-import microsoft from "../assets/partners/microsoft.svg";
-import airbnb from "../assets/partners/airbnb.svg";
-import hubspot from "../assets/partners/hubspot.svg";
-import fedex from "../assets/partners/fedex.svg";
-import walmart from "../assets/partners/walmart.svg";
 import map from "../assets/images/map.svg";
 import imac from "../assets/cards/imac.jpg";
 import macbook from "../assets/cards/macbook.svg";
-import iphone from "../assets/cards/iphone.svg";
 import auli from "../assets/cards/auli.svg";
 import card1 from "../assets/cards/card1.svg";
 import card2 from "../assets/cards/card2.svg";
 import card3 from "../assets/cards/card3.svg";
-import left from "../assets/icons/left.svg";
-import right from "../assets/icons/right.svg";
 import mobile from "../assets/cards/mobile.svg";
 import laptop from "../assets/cards/laptop.svg";
 import system from "../assets/cards/system.svg";
 import bot from "../assets/cards/robo.svg";
 import leftarrow from "../assets/icons/leftarrow.svg";
-import SliderCard from "../patterns/slider";
+import imac2 from '../assets/cards/imac2.svg'
+import bluedot from "../assets/images/bluedot.svg";
+import metrono from '../assets/pdf/metrono.pdf'
+import greendot from "../assets/images/greendot.svg";
+import yellowdot from "../assets/images/yellowdot.svg";
+import preet from '../assets/pdf/preet.pdf'
+import ngauge from '../assets/pdf/ngauge.pdf'
 
 const Home = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   return (
     <>
@@ -54,17 +45,17 @@ const Home = () => {
           <Hero />
         </div>
 
-        <div className="partners">
-          <img src={airbnb} alt="airbnb" data-aos="fade-up"></img>
-          <img src={hubspot} alt="hubspot" data-aos="fade-up"></img>
-          <img src={google} alt="google" data-aos="fade-up"></img>
-          <img src={microsoft} alt="microsoft" data-aos="fade-up"></img>
-          <img src={walmart} alt="walmart" data-aos="fade-up"></img>
-          <img src={fedex} alt="fedex" data-aos="fade-up"></img>
-        </div>
+        {/* <div className="partners">
+          <img src={airbnb} alt="airbnb"></img>
+          <img src={hubspot} alt="hubspot"></img>
+          <img src={google} alt="google"></img>
+          <img src={microsoft} alt="microsoft"></img>
+          <img src={walmart} alt="walmart"></img>
+          <img src={fedex} alt="fedex"></img>
+        </div> */}
 
         <div className="who-we-are">
-          <div className="block-left" data-aos="fade-right">
+          <div className="block-left">
             <p className="block-title">WHO WE ARE</p>
             <p>
               We are the decentralized, autonomous, and passionate conglomerate
@@ -74,9 +65,9 @@ const Home = () => {
               expertise, and understandings in decentralized market for more
               than 4+ years.
             </p>
-            <span className="span">Got a product idea ? Let's discuss</span>
+            <Link to="/contactus" className="span">Got a product idea ? Let's discuss</Link>
           </div>
-          <div className="block-right" data-aos="fade-left">
+          <div className="block-right">
             <div className="map-image">
               <img src={map} alt="map" />
             </div>
@@ -136,29 +127,40 @@ const Home = () => {
             asessments.
           </p>
           <button>
-            <span>See all works</span>
+            <Link to="/our_work">See all works</Link>
             <img src={leftarrow} alt="leftarrow" />
           </button>
-          <div className="block-image-one" data-aos="zoom-out">
+          <div className="block-image-one">
             <WorkCard
               title="Preet interior design"
               work="UI UX Design & Development"
               src={macbook}
+              dot={yellowdot}
+              pdf={preet}
               bgcolor="#EFCD3D"
             />
-            <WorkCard
-              title="BENA credit app"
-              work="UI UX Design"
-              src={iphone}
-              bgcolor="#3079AF"
+            <WorkCard 
+              title="Metrono apps" 
+              work="UI UX Design" 
+              src={imac2} 
+              dot={bluedot}
+              pdf={metrono}
+              bgcolor="#EFCD3D" 
+              description="Metrono is a mealbox subscription model for bachelors where students, working 
+              officials and people who stay away from won't have to go to restarunts to have meals, 
+              instead they can subscribe to a mealbox to get breakfast,lunch and dinner delivered 
+              straight to your door step"
             />
           </div>
-          <div className="block-image-two" data-aos="zoom-out">
+          <div className="block-image-two">
             <WorkCard
               title="N gauge app"
               work="UI UX Design & Development"
               src={imac}
+              dot={greendot}
+              pdf={ngauge}
               bgcolor="#1AC1A3"
+              
             />
             <WorkCard
               title="X Trek "
@@ -182,10 +184,10 @@ const Home = () => {
                 pulvinar.
               </p>
             </div>
-            <div>
+            {/* <div>
               <img src={left} alt="left" style={{ marginRight: 16 }} />
               <img src={right} alt="right" />
-            </div>
+            </div> */}
           </div>
           <div className="block-card">
             <ServiceCard
@@ -203,14 +205,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="slider-block">
+        {/* <div className="slider-block">
           <p className="block-title">Trying is Believing</p>
           <p>
             See what our clients are saying about our unique and effective
             formulas.
           </p>
           <SliderCard />
-        </div>
+        </div> */}
 
         <div style={{ background: "#000" }}>
           <Contact />

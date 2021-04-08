@@ -1,8 +1,5 @@
-import React,{ useEffect } from 'react'
-
-//Importing animation
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Header from '../patterns/header'
 import { HeroCenter } from '../patterns/hero'
@@ -17,16 +14,17 @@ import ourworkImg from '../assets/images/ourwork.png'
 import idea from '../assets/images/idea.svg'
 import imac from '../assets/cards/imac.jpg'
 import macbook from '../assets/cards/macbook.svg'
-import iphone from '../assets/cards/iphone.svg'
 import auli from '../assets/cards/auli.svg'
 import imac2 from '../assets/cards/imac2.svg'
-import kodoai from '../assets/cards/kodoai.svg'
+import bluedot from "../assets/images/bluedot.svg";
+import greendot from "../assets/images/greendot.svg";
+import yellowdot from "../assets/images/yellowdot.svg";
+import metrono from '../assets/pdf/metrono.pdf'
+import thenftway from '../assets/pdf/thenftway.pdf'
+import preet from '../assets/pdf/preet.pdf'
+import ngauge from '../assets/pdf/ngauge.pdf'
 
 const OurWork = () => {
-
-    useEffect(() => {
-        Aos.init({duration:1000})
-    },[])
 
     return (
         <>
@@ -38,25 +36,31 @@ const OurWork = () => {
                 </div>
 
                 <div className="image-container">
-                    <div className="block-one" data-aos="zoom-in">
+                    <div className="block-one">
                     <WorkCard 
                         title="Preet interior design" 
                         work="UI UX Design & Development" 
                         src={macbook} 
+                        dot={yellowdot}
+                        pdf={preet}
                         bgcolor="#EFCD3D" 
                     />
                    <WorkCard 
-                        title="BENA credit app" 
+                        title="Metrono apps" 
                         work="UI UX Design" 
-                        src={iphone} 
-                        bgcolor="#3079AF" 
+                        src={imac2} 
+                        dot={bluedot}
+                        pdf={metrono}
+                        bgcolor="#EFCD3D" 
                     />
                     </div>
-                    <div className="block-two" data-aos="zoom-out">
+                    <div className="block-two">
                     <WorkCard 
                         title="N gauge app" 
                         work="UI UX Design & Development" 
                         src={imac} 
+                        dot={greendot}
+                        pdf={ngauge}
                         bgcolor="#1AC1A3" 
                     />
                    <WorkCard 
@@ -67,22 +71,25 @@ const OurWork = () => {
                         fcolor="black" 
                     />
                     </div>
-                    <div className="block-one" data-aos="zoom-in">
+                    {/* <div className="block-one">
                     <WorkCard 
                         title="KODO AI Website" 
                         work="UI UX Design & Development" 
-                        src={kodoai} 
+                        src={kodoai}
+                        dot={bluedot} 
                         bgcolor="#3079AF" 
                     />
                    <WorkCard 
                         title="Metrono apps" 
                         work="UI UX Design" 
                         src={imac2} 
+                        dot={yellowdot}
+                        pdf={metrono}
                         bgcolor="#EFCD3D" 
                     />
-                    </div>
+                    </div> */}
 
-                    <div className="work-block" data-aos="flip-down">
+                    <div className="work-block">
                         <div className="block-left">
                             <p className="block-title">Like</p>
                             <p className="block-title">What</p>
@@ -93,7 +100,7 @@ const OurWork = () => {
                                congue eget molestie. Dui mattis nunc varius facilisi 
                                tempus sed sit ultricies. Purus vel neque dolor at. 
                             </p>
-                            <button className="primary-btn">Tell us your project idea</button>
+                            <Link to="/contactus"><button className="primary-btn">Tell us your project idea</button></Link>
                         </div>
                         <div className="block-right">
                             <img src={idea} alt="idea" />

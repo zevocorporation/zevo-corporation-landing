@@ -85,6 +85,10 @@
     .ourwork .work-block{
         grid-template-columns: 1fr;
     }
+    .ourwork .image-container .block-one,
+  .ourwork .image-container .block-two {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width:576px){
