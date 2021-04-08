@@ -19,6 +19,7 @@ const initailState = {
   duration: "",
   email: "",
   mobileno: "",
+  currency:""
 };
 
 const Contact = () => {
@@ -63,6 +64,7 @@ const Contact = () => {
         amount,
         email,
         mobileno,
+        currency
       } = formData;
 
       let templateParams = {
@@ -74,6 +76,7 @@ const Contact = () => {
         amount,
         email,
         mobileno,
+        currency
       };
 
       emailjs
@@ -152,7 +155,7 @@ const Contact = () => {
               value={formData.amount}
               onChange={handleChange}
             />
-            <select style={{marginLeft:'-0.6em'}}>
+            <select name="currency" value={formData.currency} onChange={handleChange} style={{marginLeft:'-0.6em'}}>
               <option value="INR">
                 INR
               </option>

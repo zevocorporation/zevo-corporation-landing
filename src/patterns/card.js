@@ -103,9 +103,7 @@ export const WorkCard = ({ title, work, src, bgcolor, fcolor, dot, pdf }) => {
   return (
     <div className="work-card">
       <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        ipsum et commodo aliquet imperdiet amet. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit.
+        
       </p>
       <p
         className="card-link"
@@ -115,6 +113,7 @@ export const WorkCard = ({ title, work, src, bgcolor, fcolor, dot, pdf }) => {
           Case study
         </a>
       </p>
+     <a>View prototype</a>
       <div className="workcard-image">
         <img src={src} alt="brand" className="project-image" />
         {dot?<img src={dot} alt="dots" className="rightdot" />:null}
