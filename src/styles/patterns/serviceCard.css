@@ -30,5 +30,7 @@
 }
 
 @media screen and (max-width:576px){
-    
+    .card-title{
+        font-size: 14px;
+    }
 }
