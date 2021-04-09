@@ -192,6 +192,23 @@
     z-index: -1;
 }
 
+.work-card .mob-tag{
+    display: none;
+}
+
+.download{
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1em;
+    font-size: 1em;
+    background: #000;
+    z-index: 1000;
+    border-radius: 10px;
+    transition: 0.3s all;
+}
+
 @media screen and (max-width:768px){
     .card .card-image{
         top: -25%;
@@ -258,5 +275,11 @@
     .process-card .mob-right-arrow,
     .process-card-two .mob-left-arrow{
        display: none;
+    }
+    .work-card .web-tag{
+        display: none;
+    }
+    .work-card .mob-tag{
+        display: block;
     }
 }

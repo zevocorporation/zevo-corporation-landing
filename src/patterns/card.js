@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //importing styles
 import "../styles/patterns/card.css";
@@ -81,6 +81,7 @@ export const ProcessCard = ({ title, num, img, detail, extra }) => {
 };
 
 export const ProcessCardRight = ({ title, num, img, detail, extra }) => {
+
   return (
     <div className="process-card-two">
       <div className="block-left">
@@ -109,12 +110,24 @@ export const WorkCard = ({
   details,
   prototype
 }) => {
+
+  const [isDownload,setIsDownload] = useState(false)
+
+  const handleClick = () =>{
+    setIsDownload(true)
+    setTimeout(() => {
+      setIsDownload(false)
+    },3000)
+  }
+
   return (
+    <>
     <div className="work-card">
       <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{details}</p>
      <div style={{display:'flex',alignItems:'center',gridGap:16}}>
      <p
         className="card-link"
+        onClick={()=>handleClick()}
         style={{ background: `${bgcolor}`, color: `${fcolor}` }}
       >
         <a
@@ -137,5 +150,7 @@ export const WorkCard = ({
       <p className="title">{title}</p>
       <p style={{ fontSize: 14, color: "#f7f7f7" }}>{work}</p>
     </div>
+   {isDownload ?  <div className="download">Downloading...</div> : null }
+    </>
   );
 };

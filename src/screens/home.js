@@ -145,6 +145,7 @@ const Home = () => {
               pdf={preet}
               prototype="https://www.figma.com/proto/F1dHWKwWoEjmz13r2hHwHN/ZEVO-DESIGNS-PORTFOLIO?node-id=1%3A6&scaling=min-zoom"
               bgcolor="#EFCD3D"
+              fcolor="#000"
               details="As a leading interior designer, the folks at Preet Interior Design aimed provide exceptional customer service. They offer clients a unique and innovative approach to tackling all their design needs. Our goal was to provide their customers with an application that was easy to use as well as elegant to look on to."
             />
             <WorkCard
@@ -154,7 +155,7 @@ const Home = () => {
               dot={bluedot}
               pdf={metrono}
               prototype="https://www.figma.com/proto/F1dHWKwWoEjmz13r2hHwHN/ZEVO-DESIGNS-PORTFOLIO?node-id=1%3A2&scaling=min-zoom"
-              bgcolor="#EFCD3D"
+              bgcolor="#2025EE"
               details="Metrono is a mealbox subscription model for bachelors where students, working 
               officials and people who stay away from won't have to go to restarunts to have meals, 
               instead they can subscribe to a mealbox to get breakfast,lunch and dinner delivered 
