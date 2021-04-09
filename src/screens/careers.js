@@ -143,6 +143,8 @@ const Careers = () => {
                     <td style={{ display: "flex", alignItems: "center" }}>
                       <a
                         href={job.link}
+                        target="_blank"
+                        rel="noreferrer noopener"
                         style={{ cursor: "pointer",color:'#6e7dff' }}
                       >
                         APPLY NOW{" "}

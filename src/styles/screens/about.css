@@ -136,6 +136,10 @@
 @media screen and (max-width: 576px) {
   .about .about-landing {
     padding: 0 30px;
+    height: 110vh;
+  }
+  .about .about-landing .bg-img{
+    height: 110vh;
   }
   .about .story {
     padding: 100px 30px 50px;

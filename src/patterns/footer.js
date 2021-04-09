@@ -34,29 +34,30 @@ const Footer = () => {
             East Tambaram, Chennai, INDIA - 600 059.
           </p>
           <div className="social-icons">
-            <img 
+           <a href="https://www.facebook.com/Zevo-Corporation-349706043090666/" target="_blank" rel="noopener noreferrer">
+           <img 
               src={facebook} 
               alt="facebook" 
-              onClick={
-                () => window.location.replace("https://www.facebook.com/Zevo-Corporation-349706043090666/")} 
             />
-            <img 
+           </a>
+           <a href="https://www.instagram.com/zevo_corporation/" target="_blank" rel="noopener noreferrer">
+           <img 
               src={instagram} 
               alt="instagram"
-              onClick={
-                () => window.location.replace("https://www.instagram.com/zevo_corporation/")} 
             />
-            <img 
+           </a>
+           <a href="https://twitter.com/ZevoUx?s=08" target="_blank" rel="noopener noreferrer">
+           <img 
               src={twitter} 
               alt="twitter" 
-              onClick={
-                () => window.location.replace("https://twitter.com/ZevoUx?s=08")} 
             />
+           </a>
+            <a href="https://www.linkedin.com/company/zevo-corporation" target="_blank" rel="noopener noreferrer">
             <img 
               src={linkedin} 
-              alt="linkedin"
-              onClick={() => window.location.replace("https://www.linkedin.com/company/zevo-corporation")} 
+              alt="linkedin" 
             />
+            </a>
           </div>
         </div>
         <div className="block-two">
