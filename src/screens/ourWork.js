@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom'
 
 import Header from "../patterns/header";
 import { HeroCenter } from "../patterns/hero";
@@ -95,7 +94,7 @@ const OurWork = () => {
             />
           </div> */}
 
-          <div className="work-block" data-aos="flip-down">
+          <div className="work-block">
             <div className="block-left">
               <p className="block-title">Like</p>
               <p className="block-title">What</p>
@@ -116,7 +115,7 @@ const OurWork = () => {
                 miscommunications, ontime updates, and deliveries are the key
                 indicators for our success in the market
               </p>
-              <Link to="/contactus"><button className="primary-btn">Tell us your project idea</button></Link>
+              <a href="/contactus"><button className="primary-btn">Tell us your project idea</button></a>
             </div>
             <div className="block-right">
               <img src={idea} alt="idea" />

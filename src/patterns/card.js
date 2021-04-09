@@ -127,7 +127,7 @@ export const WorkCard = ({
           Case study
         </a>
       </p>
-      <a href={prototype} style={{color:'#6E7DFF'}}>View prototype</a>
+      <a href={prototype} target="_blank" rel="noopener noreferrer" style={{color:'#6E7DFF'}}>View prototype</a>
      </div>
       <div className="workcard-image">
         <img src={src} alt="brand" className="project-image" />

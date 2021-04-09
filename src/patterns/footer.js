@@ -63,17 +63,17 @@ const Footer = () => {
         <div className="block-two">
           <p>Quick links</p>
           <ul>
-            <li><Link to="about">About us</Link></li>
+            <li><a href="about">About us</a></li>
             {/* <li>Blogs</li> */}
-            <li><Link to="/our_work">Our work</Link></li>
+            <li><a href="/our_work">Our work</a></li>
             {/* <li>FAQs</li> */}
             <li>
-              <Link to="careers">
+              <a href="careers">
               Careers
               <span style={{ color: "#6E7DFF", fontSize: 14, marginLeft: 10 }}>
                 We are hiring
               </span>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

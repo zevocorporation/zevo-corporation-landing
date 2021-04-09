@@ -24,8 +24,8 @@ export const Hero = () => {
         satisfaction during their journey with us.
       </p>
       <div className="layer-two">
-        <Link to="/contactus"><button>Let's discuss</button></Link>
-        <Link to="/our_work">See our work</Link>
+        <a href="/contactus"><button>Let's discuss</button></a>
+        <a href="/our_work">See our work</a>
       </div>
     </div>
   );
@@ -43,7 +43,7 @@ export const HeroCenter = ({ title, page }) => {
         Our stories are the inspirations and throttle for the community.
       </p>
       <div>
-        <Link to="/contactus"><button>Got a product idea ? Let's discuss</button></Link>
+        <a href="/contactus"><button>Got a product idea ? Let's discuss</button></a>
         {page === "about" ? <Link to="/our_work">See our Work</Link> : null}
       </div>
     </div>
