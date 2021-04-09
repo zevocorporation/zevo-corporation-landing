@@ -16,7 +16,7 @@ import ServiceCard from "../patterns/serviceCard";
 import landing from "../assets/images/home.jpg";
 import map from "../assets/images/map.svg";
 import imac from "../assets/cards/imac.jpg";
-import macbook from "../assets/cards/macbook.svg";
+import macbook from "../assets/cards/macbook.jpg";
 import card1 from "../assets/cards/card1.svg";
 import card2 from "../assets/cards/card2.svg";
 import card3 from "../assets/cards/card3.svg";

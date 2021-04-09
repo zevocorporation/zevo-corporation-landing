@@ -12,7 +12,7 @@ import "../styles/screens/ourwork.css";
 import ourworkImg from "../assets/images/ourwork.jpg";
 import idea from "../assets/images/idea.png";
 import imac from "../assets/cards/imac.jpg";
-import macbook from "../assets/cards/macbook.svg";
+import macbook from "../assets/cards/macbook.jpg";
 import nftway from "../assets/images/nftway.jpg";
 import imac2 from "../assets/cards/imac2.svg";
 import bluedot from "../assets/images/bluedot.svg";
