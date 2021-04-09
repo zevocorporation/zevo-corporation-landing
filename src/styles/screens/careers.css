@@ -76,7 +76,7 @@
 }
 
 .career .values > p:nth-child(2) {
-  width: 80%;
+  width: 100%;
   margin: 1em auto 2em;
   color: #f7f7f7;
 }
@@ -184,6 +184,7 @@ td:nth-child(4) {
     letter-spacing: 0.05em;
   }
   .career .job table td:nth-child(1){
-    margin-right: 0.2em;
+    padding-right: 5px;
+    white-space: pre-wrap;
   }
 }

@@ -254,6 +254,6 @@
     }
     .process-card .mob-right-arrow,
     .process-card-two .mob-left-arrow{
-        top: 60%;
+       display: none;
     }
 }
