@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import Header from "../patterns/header";
 import { HeroCenter } from "../patterns/hero";
@@ -115,7 +116,7 @@ const OurWork = () => {
                 miscommunications, ontime updates, and deliveries are the key
                 indicators for our success in the market
               </p>
-              <button className="primary-btn">Tell us your project idea</button>
+              <Link to="/contactus"><button className="primary-btn">Tell us your project idea</button></Link>
             </div>
             <div className="block-right">
               <img src={idea} alt="idea" />
