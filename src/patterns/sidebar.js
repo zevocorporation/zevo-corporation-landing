@@ -13,13 +13,14 @@ import close from "../assets/icons/close.svg";
 const Sidebar = ({ toggleSidebar }) => {
   return (
     <div className="sidebar">
-      <span className="close" onClick={toggleSidebar}>
-        <img src={close} alt="close" style={{ width: 24 }} />
-      </span>
-
+      <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
       <Link to="/">
         <img src={logo} alt="logo" className="logo" />
       </Link>
+      <span  onClick={toggleSidebar}>
+        <img src={close} alt="close" style={{ width: 24 }} />
+      </span>
+      </div>
 
       <div className="navbar">
         <Link to="/">Home</Link>
