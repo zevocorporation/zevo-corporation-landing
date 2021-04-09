@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Header from "../patterns/header";
 import Footer from "../patterns/footer";
@@ -77,9 +76,9 @@ const About = () => {
               eight within a clocking revenue of 12 Lakh in 3 months, since the
               crew's reappearance in January, 2021.
             </p>
-            <Link to="/contactus">
+            <a href="/contactus">
               <button>Have a project idea? Get in touch</button>
-            </Link>
+            </a>
           </div>
           <div className="video">
             <img src={story} alt="story" />
