@@ -21,7 +21,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 120vh;
+  height: 100%;
   z-index: -1;
   object-fit: cover;
 }
@@ -236,6 +236,10 @@
 @media screen and (max-width: 768px) {
   .landing {
     padding: 0 50px;
+    height: 110vh;
+  }
+  .landing .bg-img{
+    height: 110vh;
   }
   .home .partners {
     padding: 100px 50px 0;
@@ -293,7 +297,7 @@
     padding: 50px 30px 0;
   }
   .home .who-we-are {
-    padding: 150px 30px 0;
+    padding: 100px 30px 0;
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }

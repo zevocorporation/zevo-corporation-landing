@@ -188,6 +188,9 @@
   .hero-center .hero-title {
     font-size: 2em;
   }
+  .hero .title{
+    font-size: 1.6em;
+  }
   .hero-center div {
     flex-direction: column;
     align-items: center;
