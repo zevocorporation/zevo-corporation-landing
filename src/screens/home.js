@@ -78,7 +78,7 @@ const Home = () => {
           <Card
             name="Mission"
             src={card1}
-            description="To achieve 40%-60% gross economic growth and achieve stability. We also aim to expand our various decentralized technical services. Along with this, we intend to contribute 25% of our net income towards rural growth, through liberal arts and literature."
+            description="To achieve 40%-60% gross economic growth and achieve stability, expanding our various decentralized services with an intention of contributing 25% of the net income towards rural growth, through liberal arts and literature."
           />
           <Card
             name="Vision"
