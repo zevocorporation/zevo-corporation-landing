@@ -58,10 +58,10 @@ const Home = () => {
           <div className="block-left">
             <p className="block-title">WHO WE ARE ?</p>
             <p>
-              We are a decentralized, autonomous, and passionate set of
-              designers, engineers, and developers. Our professional expertise
-              spans over years along with our understanding of the decentralized
-              market.
+              We are a autonomous, and passionate set of decentralized
+              designers, engineers, and product developers. Our professional
+              expertise spans over years along with our understanding of the
+              decentralized market.
             </p>
             <Link to="/contactus" className="span">
               Got a product idea ? Let's discuss
