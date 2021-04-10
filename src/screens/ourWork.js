@@ -36,7 +36,7 @@ const OurWork = () => {
         <div className="image-container">
           <div className="block-one">
             <WorkCard
-              details="As a leading interior designer, the folks at Preet Interior Design aimed provide exceptional customer service. They offer clients a unique and innovative approach to tackling all their design needs. Our goal was to provide their customers with an application that was easy to use as well as elegant to look on to."
+              details="Preet Interior Design, a leading interior designer, aimed to improve their customer service. They offer clients unique and innovative solutions for all their design needs. Our goal was to provide their customers with an application that was easy to use as well as visually pleasing."
               title="Preet interior design"
               work="UI UX Design & Development"
               src={macbook}
@@ -45,9 +45,9 @@ const OurWork = () => {
               pdf={preet}
               bgcolor="#EFCD3D"
             />
-             <WorkCard
+            <WorkCard
               title="Metrono apps"
-              details="Metrono is a mealbox subscription model for bachelors where students, working officials and people who stay away from won't have to go to restarunts to have meals, instead they can subscribe to a mealbox to get breakfast,lunch and dinner delivered straight to your door step"
+              details="Metrono is a meal box subscription model. It aimed to provide meals to students and working officials who stay away from home. Metrono facilitated their ease in acquiring daily meals. All one had to do was subscribe to a meal box. This ensured that breakfast, lunch, and dinner would get delivered straight to their doorstep."
               work="UI UX Design"
               src={imac2}
               dot={bluedot}
@@ -59,7 +59,7 @@ const OurWork = () => {
           <div className="block-two">
             <WorkCard
               title="N gauge app"
-              details="nGauge labour app helps you interact with all your employees from a single unified platform and provide an enriched experience"
+              details="nGauge is a labor app. It helps you interact with all your employees from a single unified platform. This provides an enriched experience for all those using it."
               work="UI UX Design & Development"
               src={imac}
               dot={greendot}
@@ -75,7 +75,7 @@ const OurWork = () => {
               prototype="https://www.figma.com/proto/WJJgvBe4Z6AGrllMSPj9GF/thNFTway-ZEVO?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1"
               bgcolor="#fff"
               fcolor="black"
-              details="theNFTway helps techno creatives to sell their craft through the platform. This helps them to get reach for their craft and earn money as well."
+              details="theNFTway provides techno creatives a platform to sell their craft. This helps them to reach a larger audience with their craft and earn money as well."
             />
           </div>
           {/* <div className="block-one">
@@ -106,16 +106,19 @@ const OurWork = () => {
                   lineHeight: "25px",
                 }}
               >
-                Strategized workflows, multidirectional communication channels
-                and effective build approaches is our core principle. Our
+                Our strategized workflows, multidirectional communications
+                channels, and effective build approach aid our success. Our
                 probabilistic quality assessments, tests to understand the
                 market, product and audience is what makes us stand out of crowd
                 in the market, and entitles us to be the success probabiliy
-                finders for your product. Smooth workflows, zero
-                miscommunications, ontime updates, and deliveries are the key
-                indicators for our success in the market
+                finders for your product. Smooth workflows, on-time updates, and
+                deliveries are our key performance indicators.
               </p>
-              <a href="/contactus"><button className="primary-btn">Tell us your project idea</button></a>
+              <a href="/contactus">
+                <button className="primary-btn">
+                  Tell us your project idea
+                </button>
+              </a>
             </div>
             <div className="block-right">
               <img src={idea} alt="idea" />

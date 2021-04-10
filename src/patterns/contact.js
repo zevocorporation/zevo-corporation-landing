@@ -203,7 +203,7 @@ const Contact = () => {
                 Web3 / Ethers Integration
               </option>
               <option value="others">Others</option>
-              <option value="Dapp Architechting">Dapp Architechting</option>
+              <option value="Dapp Architecting">Dapp Architechting</option>
             </select>
             on &nbsp; or &nbsp; around &nbsp; a
             <input

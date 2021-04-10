@@ -43,38 +43,28 @@ const About = () => {
           <img src={aboutImg} alt="about" className="bg-img" />
           <Header />
           <HeroCenter
-            title="We are independent Techno-artists crew"
+            title="A CREW OF INDEPENDENT TECHNO-ARTISTS"
             page="about"
           />
         </div>
 
         <div className="story">
           <div>
-            <p className="block-title">and this is our story...</p>
+            <p className="block-title">and this is our story.</p>
             <p>
-              Crew Zevo's story commenced, from it's inception in 2017, when two
-              colleagues from Madras Christian College, Chennai and a colleague
-              from American college, madurai intercepted with similar aligned
-              mission of kickstarting their careers as entrepreneurs in the
-              Information Technology Industry. Unfortunately, the trio with high
-              skills had less demand as of the crowd and blind rush in the
-              centralized space, and they were at the verge of giving up the
-              mission for their economic survival. Post, attending various
-              campus interviews, the aptitudes, and quantitative assessments
-              failed them, in getting a job as well. Meanwhile, failing in
-              various other attempts of establishing a startup parallelly in
-              various industries, finally they had a blackbook of secrets which
-              comprised of their experiences and failures. A day, they decided
-              to sit together and analyse where things went wrong. They barely
-              had any idea, but to their suprise something revoke their spirits
-              to start up 'ZEVO', meaning a new experience, again. But, this
-              time it wasn't from scratch but of from the experiences they
-              gained of past failures, and the demand they figured out in
-              decentralized space which became the secret ingredient of crew
-              zevo's success, which your eyes are witnessing now, in the moment.
-              And that's how we grew from a crew, otherwise a family of three to
-              eight within a clocking revenue of 12 Lakh in 3 months, since the
-              crew's reappearance in January, 2021.
+              In 2017, three friends came together with a dream. They wanted to
+              kickstart their careers as entrepreneurs in the Information
+              Technology industry. This dream faced many obstacles, including
+              but not limited to the global pandemic. The trio had to tackle
+              many challenges both in their personal and professional lives.
+              Yet, their spirits were not dulled. Their experiences and failures
+              had made them tougher. One day, the three decided that they
+              wouldn’t wait around any longer. Hence, Zevo was born. Not from
+              scratch, but as a resurrection from their past failures. It was
+              their phoenix that arose from the ashes. As time passed, the Zevo
+              family grew. Before they knew it, they clocked a seven-figure
+              revenue in three months. The story of Zevo is a story of dreams. A
+              story of the light at the end of the tunnel. The story of us all.
             </p>
             <a href="/contactus">
               <button>Have a project idea? Get in touch</button>
@@ -87,60 +77,57 @@ const About = () => {
 
         <div className="process">
           <p className="block-title">The process we follow</p>
-          <p>
-            Understand how we understand you and that's where the trust and
-            power to succeed mutually comes in.
-          </p>
+          <p>Understand how we understand you</p>
           <div className="process-card-container">
             <ProcessCard
               num="01"
               title="Requirements"
               img={process1}
-              detail="We analyse and encompass tasks determining 
-              the demands and conditions to strategize the workflows, reduce cost, timefreames for new or altered product, taking 
-              account of the possibly conflicts of the various stakeholder decisions and amendments"
-              extra="Strategized workflows, multidirectional communication channels and effective build approaches is our core principle"
+              detail="First, we analyze tasks by determining the demands and conditions. We do so to plan the workflows. This helps in improving the efficiency and effectiveness of product development. Further, we take into account the possible conflicts that may arise among the stakeholder decisions, on the product as well.
+              "
+              extra="Strategized workflows, multidirectional communication channels, and effective build approaches are our core principles."
             />
             <ProcessCardRight
               num="02"
               title="DOCUMENTATION"
               img={processtwo}
-              extra="Documentation commences sincethe architechting phase and continues throughout the design, development cycles and delivery which become the pre-requisites for case studies and post analysis of the cycle"
-              detail="Documentations, becomes the asset of understanding about the product and it's value propositions, for a sustainable penetration"
+              extra="Documentation commences from the architecting phase. This continues throughout the design, development, and delivery cycle. It also becomes a prerequisite during case studies and analyses of the cycle."
+              detail="It is needless to say that documentation is an asset when it comes to understanding the product"
             />
             <ProcessCard
               num="03"
               title="UI & UX Design"
               img={processthree}
               extra="Visual designs play vital role, psychologically to understand the product, market and connect to the people with right buying power, access their comforts and establish a seamless userflow"
-              detail="We take you through a visual journey with our wireframes, High Fidelity prototypes to understand the product in a visual approach and solidify the idea and mission"
+              detail="Seeing is believing. Hence, we take you through a visual journey of our product development process. We do this with our wireframes and High Fidelity prototypes. This helps to understand the product while solidifying the idea and mission."
             />
             <ProcessCardRight
               num="04"
               title="handoff & development"
-              detail="Dependencies, miscommunications and opaque workflows are the barrier for an effective design and development cycle."
-              extra="We deliver artifacts on each milestone accomplishment, seamlessly for the development teams, marketing teams and product teams to carry their workflows without dependencies"
+              detail="We provide deliverables at each milestone accomplishment. This is to ensure that all teams carry out their workflows without dependencies."
+              extra="At Zevo, we understand that dependencies, miscommunications, and opaque workflows are the barriers to an effective work cycle.
+              "
               img={processfour}
             />
             <ProcessCard
               num="05"
               title="ACCEPTANCE & TESTING"
               img={processfive}
-              extra="Our probabilistic quality assessments, tests to understand the market, product and audience is what makes us stand out of crowd in the market, and entitles us to be the success probabiliy finders for your product"
-              detail="Revisions are natural, and we consistently revise and test the products to achieve the best version of it until the acceptance is arrived, and the package is delivered"
+              extra="Our probabilistic quality assessments and tests help us to understand the market, product, and audience. This is what makes us stand out. Thus, you rest assured of your success when choosing us."
+              detail="Revisions are natural. We constantly revise and retest the products to achieve the best version of them."
             />
             <ProcessCardRight
               num="06"
               title="Delivery"
               img={processsix}
-              extra="Punctuality is our promise and we deliver the demands ontime, as interim product versions on the go and complete package with workfiles, source codes and license as agreed, while the closure"
-              detail="Smooth workflows, zero miscommunications, ontime updates, and deliveries are the key indicators for our success in the market"
+              extra="Punctuality is our promise. We deliver the products as provisional product versions as and when the work takes place. Further, we deliver the complete package with work files, source codes, and licenses as agreed while the closure takes place. We make sure that we provide these on time, without any hassles."
+              detail="Smooth workflows, no miscommunications, and punctuality are the key indicators of our success."
             />
             <ProcessCard
               num="07"
               title="Support and Maintenance"
-              detail="We power you and your products forever and that's the promise we make at a cost of our understandings and alignment in the journey"
-              extra="Businesses letting their clients, midway, post the payment lack vision and barely they become sustainable in time"
+              detail="We power you and your products forever. That's the promise we make."
+              extra="Some businesses let go of their clients after the completion of payment, but not Zevo. These businesses lack vision and will fail at being sustainable. At Zevo, we are always approachable for any assistance you need on your product. We guarantee you."
               img={processseven}
             />
           </div>
@@ -149,21 +136,26 @@ const About = () => {
         <div className="team">
           <p className="block-title">meet our crew</p>
           <p>
-            Our core crew, is the backbone of our success and stability in the
-            market and client satisfactions and hence we accredit them with
-            designations herein, as of their active contributions and well
-            conducts abiding with the community's policies and standards.
+            Our core crew is the backbone of our success. Our stability in the
+            market is solely accredited to them. Herein are their designations
+            in line with their contributions. We ensure that our crew strives
+            towards excellence and customer satisfaction. At Zevo, we are not
+            only a crew, we are a family.
           </p>
           <div className="person-card">
             <PersonCard
               title="Zero aka Sam"
               work="Founder, Chairman"
               src={person1}
+              link="https://www.linkedin.com/in/zeroakasam/"
+              tweet="https://twitter.com/zeroakasam"
             />
             <PersonCard
               title="Harsh Vardhan Singh"
               work="Founder, Chief Executive Officer"
               src={person2}
+              link="https://www.linkedin.com/in/harsh2569/"
+              tweet="https://twitter.com/Harsh2569"
             />
             <PersonCard
               title="Bharat Raj"

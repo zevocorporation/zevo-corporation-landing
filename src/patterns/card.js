@@ -30,7 +30,7 @@ export const CareerCard = ({ title, src, detail }) => {
   );
 };
 
-export const PersonCard = ({ title, src, work }) => {
+export const PersonCard = ({ title, src, work, link, tweet }) => {
   return (
     <div className="PersonCard">
       <div className="block-top">
@@ -39,8 +39,14 @@ export const PersonCard = ({ title, src, work }) => {
       <div className="block-bottom">
         <p className="card-title">{title}</p>
         <p style={{ color: "#f7f7f7" }}>{work}</p>
-        <img src={twitter} alt="twitter" />
-        <img src={linkedin} alt="linkedin" />
+        <a href={tweet} target="_blank" rel="noopener noreferrer">
+          <img src={twitter} alt="twitter" />
+        </a>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} alt="linkedin" />
+        </a>
+        {/* <img src={twitter} alt="twitter" /> */}
+        {/* <img src={linkedin} alt="linkedin" /> */}
       </div>
     </div>
   );
@@ -81,7 +87,6 @@ export const ProcessCard = ({ title, num, img, detail, extra }) => {
 };
 
 export const ProcessCardRight = ({ title, num, img, detail, extra }) => {
-
   return (
     <div className="process-card-two">
       <div className="block-left">
@@ -108,49 +113,55 @@ export const WorkCard = ({
   dot,
   pdf,
   details,
-  prototype
+  prototype,
 }) => {
+  const [isDownload, setIsDownload] = useState(false);
 
-  const [isDownload,setIsDownload] = useState(false)
-
-  const handleClick = () =>{
-    setIsDownload(true)
+  const handleClick = () => {
+    setIsDownload(true);
     setTimeout(() => {
-      setIsDownload(false)
-    },3000)
-  }
+      setIsDownload(false);
+    }, 3000);
+  };
 
   return (
     <>
-    <div className="work-card">
-      <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{details}</p>
-     <div style={{display:'flex',alignItems:'center',gridGap:16}}>
-     <p
-        className="card-link"
-        onClick={()=>handleClick()}
-        style={{ background: `${bgcolor}`, color: `${fcolor}` }}
-      >
-        <a
-          href={pdf}
-          style={{ color: `${fcolor}` }}
-          download
-          target="_blank"
-          rel="noreferrer"
-        >
-          Case study
-        </a>
-      </p>
-      <a href={prototype} target="_blank" rel="noopener noreferrer" style={{color:'#6E7DFF'}}>View prototype</a>
-     </div>
-      <div className="workcard-image">
-        <img src={src} alt="brand" className="project-image" />
-        {dot ? <img src={dot} alt="dots" className="rightdot" /> : null}
-        {dot ? <img src={dot} alt="dots" className="leftdot" /> : null}
+      <div className="work-card">
+        <p style={{ color: "#f7f7f7", lineHeight: "25px" }}>{details}</p>
+        <div style={{ display: "flex", alignItems: "center", gridGap: 16 }}>
+          <p
+            className="card-link"
+            onClick={() => handleClick()}
+            style={{ background: `${bgcolor}`, color: `${fcolor}` }}
+          >
+            <a
+              href={pdf}
+              style={{ color: `${fcolor}` }}
+              download
+              target="_blank"
+              rel="noreferrer"
+            >
+              Case study
+            </a>
+          </p>
+          <a
+            href={prototype}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#6E7DFF" }}
+          >
+            View prototype
+          </a>
+        </div>
+        <div className="workcard-image">
+          <img src={src} alt="brand" className="project-image" />
+          {dot ? <img src={dot} alt="dots" className="rightdot" /> : null}
+          {dot ? <img src={dot} alt="dots" className="leftdot" /> : null}
+        </div>
+        <p className="title">{title}</p>
+        <p style={{ fontSize: 14, color: "#f7f7f7" }}>{work}</p>
       </div>
-      <p className="title">{title}</p>
-      <p style={{ fontSize: 14, color: "#f7f7f7" }}>{work}</p>
-    </div>
-   {isDownload ?  <div className="download">Downloading...</div> : null }
+      {isDownload ? <div className="download">Downloading...</div> : null}
     </>
   );
 };

@@ -24,7 +24,6 @@ import health from "../assets/cards/health.svg";
 import community from "../assets/cards/community.svg";
 
 const Careers = () => {
-
   return (
     <>
       <div className="career">
@@ -39,24 +38,26 @@ const Careers = () => {
             <p className="block-title">Life At Zevo</p>
 
             <p>
-              We offer a warm and amiable work freedom that caters to an
+              We offer a warm and amiable work environment that caters to an
               individual’s attainment of personal goals while also accomplishing
-              the desired community goals. Our working partners are an
-              enthusiastic group of empowered youth with great vision for the
-              future. Each of them will accompany you in every step of your
-              journey with our community and will ensure you are comfortable
-              throughout.
+              the organizational goals. Our working partners are a group of
+              empowered youth with a great vision for the future. Each of them
+              will accompany you in every step of your journey with us and will
+              ensure that you are comfortable throughout.
             </p>
             <p>
               Here at Zevo Corporation, we believe that work and play go hand in
-              hand. Optimal output comes from optimal working partner
-              satisfaction. There are zero prejudice, bias and capital
-              obsessions draining the individuals efforts in our work culture.
-              Transparency is the secret of our strength and success as a crew.
+              hand. Optimal output comes from optimal employee satisfaction. We
+              have no prejudices, biases, or capital obsessions that drain the
+              individual's efforts, in our work culture. Transparency is the
+              secret of our strength and success as a crew.
             </p>
-           <a href="#jobs"> <button className="secondary-btn">See open roles</button></a>
+            <a href="#jobs">
+              {" "}
+              <button className="secondary-btn">See open roles</button>
+            </a>
           </div>
-          <div className="block-right" >
+          <div className="block-right">
             <div className="image-block-one">
               <div>
                 <img src={frame1} alt="frame1" />
@@ -79,42 +80,41 @@ const Careers = () => {
         <div className="values">
           <p className="block-title">Our Values</p>
           <p>
-            We, strategize our mission based on sustainable economy, impacts on
-            the culture, natural resources and collectively, the humanity in
-            long term thus preceeding technovations without giving up the
-            humanity, nature, emotions, and racing bluntly with capital
-            obsessions.
+            Our mission is based on improving sustainability, cultural impacts,
+            and natural resources. We put the greater good of humanity above
+            everything else. This is what sets us apart from others who blindly
+            race towards revenue, mergers and acquisitions.
           </p>
           <div className="wrapper">
             <CareerCard
               title="Your work matters"
               src={workmatters}
-              detail="Be comfortable and flexible as we guarantee freedom of work wherever you demand"
+              detail="Be comfortable. We are flexible in terms of where you want to work. Work where you are comfortable and convenient to do so."
             />
             <CareerCard
               title="Flexible vacation policy"
               src={vacation}
-              detail="We want our crew to be healthy, travel often, get time to give back, with paid time-offs."
+              detail="We want our crew to be healthy, travel often, and get time to give back to society, backed by paid days off"
             />
             <CareerCard
               title="Unbiased work culture"
               src={health}
-              detail="We are united under differences thus creating a culture that values diverse perspectives and backgrounds."
+              detail="We believe in unity in diversity. Our work culture values diverse perspectives and backgrounds."
             />
             <CareerCard
-              title="Surreal workspace"
+              title="Picturesque Workspace"
               src={workplace}
-              detail="Workspace with sustainable greenery, artworks, and natural accompaniments to relax the minds flexibly"
+              detail="The workspace ensures sustainable greenery and artworks to relax the mind and ease the eyes."
             />
             <CareerCard
-              title="catered meals"
+              title="Delectable Meals"
               src={meals}
-              detail="Food is the fuel, of existence, for artists. Our culinary team provides organic, farmed meals free of cost."
+              detail="Food is the fuel of existence. Our culinary team provides organic, farm-fresh meals free of cost."
             />
             <CareerCard
-              title="strong community"
+              title="Strong Community"
               src={community}
-              detail="We offer opportunities to our community regardless of race, color, religion, nation, age, and untouchabilities."
+              detail="We offer opportunities to our community irrespective of race, color, religion, age etc."
             />
           </div>
         </div>
@@ -122,10 +122,10 @@ const Careers = () => {
         <div className="job" id="jobs">
           <p className="block-title">explore job openings</p>
           <p>
-            Be authentic. That’s who we’re inviting. Our culture celebrates and
-            supports unique talents, souls and truth within.
+            Be authentic. That’s what we need. Our work culture celebrates and
+            supports unique talents, souls, and the truth within.
           </p>
-          <table >
+          <table>
             <tr>
               <th>Job title</th>
               <th>Department</th>
@@ -145,7 +145,7 @@ const Careers = () => {
                         href={job.link}
                         target="_blank"
                         rel="noreferrer noopener"
-                        style={{ cursor: "pointer",color:'#6e7dff' }}
+                        style={{ cursor: "pointer", color: "#6e7dff" }}
                       >
                         APPLY NOW{" "}
                       </a>

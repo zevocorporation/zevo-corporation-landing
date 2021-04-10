@@ -56,13 +56,12 @@ const Home = () => {
 
         <div className="who-we-are">
           <div className="block-left">
-            <p className="block-title">WHO WE ARE</p>
+            <p className="block-title">WHO WE ARE ?</p>
             <p>
-              We are the decentralized, autonomous, and passionate conglomerate
-              of agile crews of UI.UX designers, backend, frontend, engineers,
-              dapp, smart contract, layer 2, core blockchain developers, product
-              developers, managers, SME's, and artists with professional
-              expertise, and understandings in decentralized market for years.
+              We are a decentralized, autonomous, and passionate set of
+              designers, engineers, and developers. Our professional expertise
+              spans over years along with our understanding of the decentralized
+              market.
             </p>
             <Link to="/contactus" className="span">
               Got a product idea ? Let's discuss
@@ -79,24 +78,23 @@ const Home = () => {
           <Card
             name="Mission"
             src={card1}
-            description="To achieve 40%-60% gross economic growth for the stability of our techno-artists community, rendering and expanding various decentralized technical services and contribute 25% net economy for the rural growth, in the form of liberal arts, and literatures, in this fiscal year."
+            description="To achieve 40%-60% gross economic growth and achieve stability. We also aim to expand our various decentralized technical services. Along with this, we intend to contribute 25% of our net income towards rural growth, through liberal arts and literature."
           />
           <Card
             name="Vision"
             src={card2}
-            description="Establishing a novel, Decentralized Information Technology (DIT) network accross the globe, with 
-            autonomous workflows, exploitation free, independent, freewill workculture, otherwise establishing a futuristic decentralized techno-artists community."
+            description="Establishing a novel, Decentralized Information Technology (DIT) network across the globe. One which promotes autonomous workflows and exploitation-free  workculture. In other words, establishing a futuristic decentralized community of techno-artists."
           />
           <Card
             name="Values"
             src={card3}
-            description="We, strategize our mission based on sustainable economy, impacts on the culture, natural resources and collectively, the humanity in long term thus preceeding technovations without giving up the humanity, nature, emotions, and racing bluntly with capital obsessions."
+            description="We believe in sustainability. Hence, we value natural resources and the socio-economic conditions of society, as well. Zevo cares about the good of mankind. Everything we do is powered by this."
           />
         </div>
 
         <div className="experience">
           <p className="block-title">Experience you can count on </p>
-          <p>Our achievement in the journey depicted in numbers</p>
+          <p>Our achievement in numbers.</p>
           <div className="block">
             <div>
               <h1>
@@ -128,9 +126,9 @@ const Home = () => {
         <div className="work">
           <p className="block-title">Our Work</p>
           <p>
-            Our works speak for us. Explore updates on our latest works with
-            global alliances to understand and percieve our efforts and vision
-            with one leap ahead of commencing the journey with us.
+            Our work speak for us. Explore updates on our latest works to get a
+            sneak peek of our efforts and vision. Get with one step forward on
+            your journey with us.
           </p>
           <button>
             <Link to="/our_work">See all works</Link>
@@ -146,7 +144,7 @@ const Home = () => {
               prototype="https://www.figma.com/proto/F1dHWKwWoEjmz13r2hHwHN/ZEVO-DESIGNS-PORTFOLIO?node-id=1%3A6&scaling=min-zoom"
               bgcolor="#EFCD3D"
               fcolor="#000"
-              details="As a leading interior designer, the folks at Preet Interior Design aimed provide exceptional customer service. They offer clients a unique and innovative approach to tackling all their design needs. Our goal was to provide their customers with an application that was easy to use as well as elegant to look on to."
+              details="Preet Interior Design, a leading interior designer, aimed to improve their customer service. They offer clients unique and innovative solutions for all their design needs. Our goal was to provide their customers with an application that was easy to use as well as visually pleasing."
             />
             <WorkCard
               title="Metrono apps"
@@ -156,10 +154,7 @@ const Home = () => {
               pdf={metrono}
               prototype="https://www.figma.com/proto/F1dHWKwWoEjmz13r2hHwHN/ZEVO-DESIGNS-PORTFOLIO?node-id=1%3A2&scaling=min-zoom"
               bgcolor="#2025EE"
-              details="Metrono is a mealbox subscription model for bachelors where students, working 
-              officials and people who stay away from won't have to go to restarunts to have meals, 
-              instead they can subscribe to a mealbox to get breakfast,lunch and dinner delivered 
-              straight to your door step"
+              details="Metrono is a meal box subscription model. It aimed to provide meals to students and working officials who stay away from home. Metrono facilitated their ease in acquiring daily meals. All one had to do was subscribe to a meal box. This ensured that breakfast, lunch, and dinner would get delivered straight to their doorstep."
             />
           </div>
           <div className="block-image-two">
@@ -171,9 +166,7 @@ const Home = () => {
               pdf={ngauge}
               prototype="https://www.figma.com/proto/ezjEiW1CXmsBpmdRuk90du/Labour-Webapp?node-id=359%3A1441&scaling=fit-width"
               bgcolor="#1AC1A3"
-              details="nGauge labour app helps you interact with all
-              your employees from a single unified platform and
-              provide an enriched experience"
+              details="nGauge is a labor app. It helps you interact with all your employees from a single unified platform. This provides an enriched experience for all those using it."
             />
             <WorkCard
               title="The NFT way "
@@ -183,7 +176,7 @@ const Home = () => {
               prototype="https://www.figma.com/proto/WJJgvBe4Z6AGrllMSPj9GF/thNFTway-ZEVO?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1"
               bgcolor="#fff"
               fcolor="black"
-              details="theNFTway helps techno creatives to sell their craft through the platform. This helps them to get reach for their craft and earn money as well."
+              details="theNFTway provides techno creatives a platform to sell their craft. This helps them to reach a larger audience with their craft and earn money as well."
             />
           </div>
         </div>
@@ -193,11 +186,9 @@ const Home = () => {
             <div>
               <p className="block-title">Our services</p>
               <p>
-                We add life to your ideas and soul to your value propositions,
-                so your clients and we stay forever with futuristic
-                understanding about the product ahead of time in the market,
-                thus pioneering forever as leaders in our respective industries
-                sustainably
+                We give life to your ideas. Through a futuristic approach, we
+                make sure that your product stays ahead of time. Thus ensuring
+                both yours and our sustainability in the market.
               </p>
             </div>
             {/* <div>
@@ -209,26 +200,24 @@ const Home = () => {
             <ServiceCard
               name="UI & UX Designing"
               src={mobile}
-              details="Rich user experience built with industry standard designs, A/B tested patterns, smooth user flows and customer personas helps you understand the market trend and customer traits."
+              details="Rich user experience built with industry grade designs. A/B tested patterns, smooth work flows and customer personas helps you understand the market trend and customer traits."
             />
             <ServiceCard
               name="Decentralized Development"
-              details="Access seamless smart contract developer crews implementating NFT, AMM, DeFi and novel Dapp ideas in the vast horizons of decentralized market and economy"
+              details="Access seamless and smart contract developer groups that help you to implement NFT, AMM, DeFi and novel Dapp ideas in the vast horizon of the decentralized marketplace."
               src={laptop}
               type="inverse"
             />
             <ServiceCard
               name="Application Development"
               src={system}
-              details="Finding reliable team is one of the most challenging tasks in a
-            business , we ensure quality solutions to such problems
-            through our application development, architecting crews to build your ideas"
+              details="Your ideas are our launchpad. We seamlessly develop applications that suit your needs. Thereby helping you to boost business. Our highly professional application development team can be relied on to develop the best applications as per your requirement."
             />
             <ServiceCard
               name="Bot Development"
               src={bot}
               type="inverse"
-              details="Bot culture, is an inevitable automation industrial revolution easing the business processes and our crews specialize at it with industry standard expertise"
+              details="Bot culture is a novel and efficient industrial revolution. It has eased its way into the business processes. Our professionals specialize in it with high quality expertise."
             />
           </div>
         </div>
